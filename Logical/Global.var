@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 VAR
 
@@ -5,4 +6,8 @@ END_VAR
 
 VAR CONSTANT
 
+=======
+VAR
+	ZmiennaKamila : TypDanych;
+>>>>>>> Kamil
 END_VAR
