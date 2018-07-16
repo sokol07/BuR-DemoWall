@@ -1,3 +1,4 @@
 VAR
 	ZmiennaKamila : USINT;
+	ZmiennaKamila2 : USINT;
 END_VAR
