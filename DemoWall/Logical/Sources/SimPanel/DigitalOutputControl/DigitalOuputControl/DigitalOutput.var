@@ -1,0 +1,10 @@
+VAR
+	DigitalOutput1 : DigitalOutputType;
+	DigitalOutput2 : DigitalOutputType;
+	DigitalOutput3 : DigitalOutputType;
+	DigitalOutput4 : DigitalOutputType;
+	DigitalOutput5 : DigitalOutputType;
+	DigitalOutput6 : DigitalOutputType;
+	DigitalOutput7 : DigitalOutputType;
+	DigitalOutput8 : DigitalOutputType;
+END_VAR

@@ -1,0 +1,13 @@
+VAR
+	gAxis01 : ACP10AXIS_typ;
+	gAxis02 : ACP10AXIS_typ;
+	gAxis03 : ACP10AXIS_typ;
+	gAxis04 : ACP10AXIS_typ;
+	gAxis05 : ACP10AXIS_typ;
+	gAxis05_HW : SdcHwCfg_typ := (0);
+	gAxis05_DrvIf : SdcDrvIf16_typ := (0);
+	gAxis05_EncIf1 : SdcEncIf16_typ := (0);
+	gAxis05_DiDoIf : SdcDiDoIf_typ := (0);
+	gAxis05_MotorStep0 : INT := 0;
+	gAxis06 : ACP10AXIS_typ;
+END_VAR

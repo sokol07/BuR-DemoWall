@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.6.57 SP?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="0AC808.9" Type="0AC808.9" Version="1.0.0.0">
+    <Connection Connector="ETH1" TargetModule="8EIxxxHxT1x.xxxx-1" TargetConnector="PLK2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.1" />
+    </Connection>
+    <Connection Connector="ETH3" TargetModule="X20BC1083" TargetConnector="PLK1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.1" />
+    </Connection>
+    <Connection Connector="ETH4" TargetModule="X67BC8321-1" TargetConnector="PLK1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.1" />
+    </Connection>
+    <Connection Connector="ETH7" TargetModule="X20SL8010" TargetConnector="PLK2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.1" />
+    </Connection>
+  </Module>
+  <Module Name="4XP0000.00-K21" Type="4XP0000.00-K21" Version="2.0.0.0">
+    <Connection Connector="X2X1" TargetModule="X67SI8103" TargetConnector="X2X2">
+      <Cable Type="X2XCable" Length="10" Version="1.0.0.1" />
+    </Connection>
+  </Module>
+  <Module Name="80SD100XD.C044-01" Type="80SD100XD.C044-01" Version="2.1.0.1">
+    <Connection Connector="X2X1" TargetModule="X20BT9400" TargetConnector="X2X1">
+      <Cable Type="X2XCable" Length="10" Version="1.0.0.1" />
+    </Connection>
+    <Parameter ID="BothEndSwitchesAreNormallyOpen_r1" Value="on" />
+    <Parameter ID="QuickStopIsNormallyOpen_r1" Value="on" />
+  </Module>
+  <Module Name="80VD100PD.C000-01" Type="80VD100PD.C000-01" Version="2.0.1.0">
+    <Connection Connector="PLK1" TargetModule="8EIxxxHxT1x.xxxx-1" TargetConnector="PLK1" NodeNumber="7">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.1" />
+    </Connection>
+    <Connection Connector="PLK2" TargetModule="8EIxxxMxS1x.xxxx-1" TargetConnector="PLK1" NodeNumber="7">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.1" />
+    </Connection>
+    <Parameter ID="BothEndSwitchesAreNormallyOpen_r1" Value="on" />
+    <Parameter ID="QuickStopIsNormallyOpen_r1" Value="on" />
+    <Parameter ID="BothEndSwitchesAreNormallyOpen_r2" Value="on" />
+    <Parameter ID="QuickStopIsNormallyOpen_r2" Value="on" />
+  </Module>
+  <Module Name="8EAC0122.001-1" Type="8EAC0122.001-1" Version="1.0.0.2">
+    <Connection Connector="SS" TargetModule="8EIxxxMxS1x.xxxx-1" TargetConnector="SS1" />
+  </Module>
+  <Module Name="8EIxxxHxT1x.xxxx-1" Type="8EIxxxHxT1x.xxxx-1" Version="1.0.0.3">
+    <Connection Connector="PLK1" TargetModule="80VD100PD.C000-01" TargetConnector="PLK1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.1" />
+    </Connection>
+    <Connection Connector="PLK2" TargetModule="0AC808.9" TargetConnector="ETH1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.1" />
+    </Connection>
+    <Parameter ID="StandAloneDrive_PowerSupply" Value="dc_powered" />
+    <Parameter ID="BothEndSwitchesAreNormallyOpen_r1" Value="on" />
+    <Parameter ID="QuickStopIsNormallyOpen_r1" Value="on" />
+    <Parameter ID="BothEndSwitchesAreNormallyOpen_r2" Value="on" />
+    <Parameter ID="QuickStopIsNormallyOpen_r2" Value="on" />
+    <Parameter ID="BothEndSwitchesAreNormallyOpen_r3" Value="on" />
+    <Parameter ID="QuickStopIsNormallyOpen_r3" Value="on" />
+  </Module>
+  <Module Name="8EIxxxMxS1x.xxxx-1" Type="8EIxxxMxS1x.xxxx-1" Version="1.0.0.1">
+    <Connection Connector="PLK1" TargetModule="80VD100PD.C000-01" TargetConnector="PLK2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.1" />
+    </Connection>
+    <Parameter ID="StandAloneDrive_PowerSupply" Value="dc_powered" />
+    <Parameter ID="BothEndSwitchesAreNormallyOpen_r1" Value="on" />
+    <Parameter ID="QuickStopIsNormallyOpen_r1" Value="on" />
+  </Module>
+  <Module Name="X20AI2632" Type="X20AI2632" Version="1.1.5.1">
+    <Connection Connector="SS1" TargetModule="X20TB12d" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11c" TargetConnector="SL1" />
+  </Module>
+  <Module Name="X20AO2632" Type="X20AO2632" Version="1.0.1.1">
+    <Connection Connector="SS1" TargetModule="X20TB12e" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11d" TargetConnector="SL1" />
+  </Module>
+  <Module Name="X20AP3111" Type="X20AP3111" Version="1.0.4.0">
+    <Connection Connector="SS1" TargetModule="X20TB32" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM32" TargetConnector="SL1" />
+  </Module>
+  <Module Name="X20BB82" Type="X20BB82" Version="1.0.1.0" />
+  <Module Name="X20BC0063__DTM_" Type="FBD.GSDDTM.DTMDev.X20BC0063.1.44" Version="1.44" OrderNumber="X20BC0063 (DTM)">
+    <Connection Connector="PRB1" TargetModule="X20IF1061_1" TargetConnector="IF1" NodeNumber="2" />
+    <Parameter ID="DtmId" Value="283e3c79-1dfa-4388-8efc-c9f881ac2cf0" />
+    <Parameter ID="DtmRef" Value="FBD.GSDDTM.DTMDev.X20BC0063.1.44" />
+    <Group ID="ChannelBlocks_f88dcef4-4201-4533-86a5-1206db71a6c6" Description="X20 DO 9322: 12 DO (24V Source) &lt;Slot 2&gt;" />
+    <Group ID="IO_InputImage_f88dcef4-4201-4533-86a5-1206db71a6c6" Description="2 Byte(s)" />
+    <Group ID="IO_OutputImage_f88dcef4-4201-4533-86a5-1206db71a6c6" Description="2 Byte(s)" />
+    <Group ID="Channel_1_IO_OutputImage_f88dcef4-4201-4533-86a5-1206db71a6c6" />
+    <Parameter ID="Name_Channel_1_IO_OutputImage_f88dcef4-4201-4533-86a5-1206db71a6c6" Value="DigitalOutput01" />
+    <Group ID="Channel_2_IO_OutputImage_f88dcef4-4201-4533-86a5-1206db71a6c6" />
+    <Parameter ID="Name_Channel_2_IO_OutputImage_f88dcef4-4201-4533-86a5-1206db71a6c6" Value="DigitalOutput02" />
+    <Group ID="Channel_3_IO_OutputImage_f88dcef4-4201-4533-86a5-1206db71a6c6" />
+    <Parameter ID="Name_Channel_3_IO_OutputImage_f88dcef4-4201-4533-86a5-1206db71a6c6" Value="DigitalOutput03" />
+    <Group ID="Channel_4_IO_OutputImage_f88dcef4-4201-4533-86a5-1206db71a6c6" />
+    <Parameter ID="Name_Channel_4_IO_OutputImage_f88dcef4-4201-4533-86a5-1206db71a6c6" Value="DigitalOutput04" />
+    <Group ID="Channel_5_IO_OutputImage_f88dcef4-4201-4533-86a5-1206db71a6c6" />
+    <Parameter ID="Name_Channel_5_IO_OutputImage_f88dcef4-4201-4533-86a5-1206db71a6c6" Value="DigitalOutput05" />
+    <Group ID="Channel_6_IO_OutputImage_f88dcef4-4201-4533-86a5-1206db71a6c6" />
+    <Parameter ID="Name_Channel_6_IO_OutputImage_f88dcef4-4201-4533-86a5-1206db71a6c6" Value="DigitalOutput06" />
+    <Group ID="Channel_7_IO_OutputImage_f88dcef4-4201-4533-86a5-1206db71a6c6" />
+    <Parameter ID="Name_Channel_7_IO_OutputImage_f88dcef4-4201-4533-86a5-1206db71a6c6" Value="DigitalOutput07" />
+    <Group ID="Channel_8_IO_OutputImage_f88dcef4-4201-4533-86a5-1206db71a6c6" />
+    <Parameter ID="Name_Channel_8_IO_OutputImage_f88dcef4-4201-4533-86a5-1206db71a6c6" Value="DigitalOutput08" />
+  </Module>
+  <Module Name="X20BC1083" Type="X20BC1083" Version="2.5.3.0">
+    <Connection Connector="PLK1" TargetModule="0AC808.9" TargetConnector="ETH3">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.1" />
+    </Connection>
+    <Connection Connector="PLK2" TargetModule="X20CP1382" TargetConnector="IF3">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.1" />
+    </Connection>
+    <Connection Connector="SL" TargetModule="X20BB82" TargetConnector="SL1" />
+  </Module>
+  <Module Name="X20BM11" Type="X20BM11" Version="1.0.0.1">
+    <Connection Connector="X2X1" TargetModule="X20CP1382" TargetConnector="IF6" />
+  </Module>
+  <Module Name="X20BM11a" Type="X20BM11" Version="1.0.0.1">
+    <Connection Connector="X2X1" TargetModule="X20BM11" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11b" Type="X20BM11" Version="1.0.0.1">
+    <Connection Connector="X2X1" TargetModule="X20BM11a" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11c" Type="X20BM11" Version="1.0.0.1">
+    <Connection Connector="X2X1" TargetModule="X20BB82" TargetConnector="IF1" />
+  </Module>
+  <Module Name="X20BM11d" Type="X20BM11" Version="1.0.0.1">
+    <Connection Connector="X2X1" TargetModule="X20BM11c" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11e" Type="X20BM11" Version="1.0.0.1">
+    <Connection Connector="X2X1" TargetModule="X20BM11d" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM32" Type="X20BM32" Version="1.0.0.1">
+    <Connection Connector="X2X1" TargetModule="X20BM33a" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM33" Type="X20BM33" Version="1.0.0.4">
+    <Connection Connector="X2X1" TargetModule="X20BM11e" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM33a" Type="X20BM33" Version="1.0.0.4">
+    <Connection Connector="X2X1" TargetModule="X20BM33" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BT9400" Type="X20BT9400" Version="1.0.2.0">
+    <Connection Connector="SS1" TargetModule="X20TB12b" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11b" TargetConnector="SL1" />
+  </Module>
+  <Module Name="X20CP1382" Type="X20CP1382" Version="1.3.2.0">
+    <Module Name="X1" Type="X1" Virtual="true" Version="1.3.2.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1382" TargetConnector="X1" />
+    </Module>
+    <Module Name="X2" Type="X2" Virtual="true" Version="1.3.2.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F1" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1382" TargetConnector="X2" />
+    </Module>
+    <Module Name="X3" Type="X3" Virtual="true" Version="1.3.2.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F2" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1382" TargetConnector="X3" />
+    </Module>
+    <Connection Connector="X1" TargetModule="X1" TargetConnector="SL" />
+    <Connection Connector="X2" TargetModule="X2" TargetConnector="SL" />
+    <Connection Connector="X3" TargetModule="X3" TargetConnector="SL" />
+    <Connector Name="IF2">
+      <Parameter ID="ActivateDevice" Value="1" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="DemoWall_HardwareConfig1" />
+    <Parameter ID="Simulation" Value="1" />
+    <Parameter ID="TimerDeviceType" Value="EPLX2X" />
+    <Parameter ID="TimerDevice" Value="X20CP1382.IF3" />
+    <Parameter ID="Cyclic1Tolerance" Value="0" />
+    <Parameter ID="Cyclic1Output" Value="1" />
+  </Module>
+  <Module Name="X20DC1396" Type="X20DC1396" Version="1.1.0.1">
+    <Connection Connector="SS1" TargetModule="X20TB12f" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11e" TargetConnector="SL1" />
+  </Module>
+  <Module Name="X20DI9371" Type="X20DI9371" Version="1.0.2.0">
+    <Connection Connector="SS1" TargetModule="X20TB12a" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11a" TargetConnector="SL1" />
+  </Module>
+  <Module Name="X20DO9322" Type="X20DO9322" Version="1.0.3.0">
+    <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11" TargetConnector="SL1" />
+  </Module>
+  <Module Name="X20IF1061_1" Type="X20IF1061-1" Version="1.6.1.0">
+    <Connection Connector="SS" TargetModule="X20BB82" TargetConnector="SS1" />
+    <Connector Name="IF1">
+      <Parameter ID="DtmRef" Value="FBDIF.Hilscher.PBMDtmNX.NETX 100 DP/DPM" />
+      <Parameter ID="DtmId" Value="20ba073a-ca99-40f6-b4e4-a2b30d473d5a" />
+    </Connector>
+    <Parameter ID="ConfigFile" Value="X20IF1061_1.dtm" />
+    <Parameter ID="ConfigModule" Value="asnxdb1" />
+  </Module>
+  <Module Name="X20MK0201" Type="X20MK0201" Version="1.0.0.0">
+    <Connection Connector="SL" TargetModule="X20SL8010" TargetConnector="SL1" />
+  </Module>
+  <Module Name="X20PS9400" Type="X20PS9400" Version="1.0.2.4">
+    <Connection Connector="SS1" TargetModule="X20TB12c" TargetConnector="SS" />
+    <Connection Connector="PS" TargetModule="X20BB82" TargetConnector="PS1" />
+  </Module>
+  <Module Name="X20SC2432" Type="X20SC2432" Version="1.10.0.2">
+    <Connection Connector="SS1" TargetModule="X20TB52b" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM33a" TargetConnector="SL1" />
+    <Parameter ID="SafeModuleID" Value="3" />
+  </Module>
+  <Module Name="X20SI9100" Type="X20SI9100" Version="1.10.0.2">
+    <Connection Connector="SS1" TargetModule="X20TB52" TargetConnector="SS" />
+    <Connection Connector="SS2" TargetModule="X20TB52a" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM33" TargetConnector="SL1" />
+  </Module>
+  <Module Name="X20SL8010" Type="X20SL8010" Version="1.6.5.1">
+    <Connection Connector="PLK2" TargetModule="0AC808.9" TargetConnector="ETH7">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.1" />
+    </Connection>
+    <Connection Connector="SS1" TargetModule="X20TB52c" TargetConnector="SS" />
+    <Parameter ID="SafeProject" Value="SafeLOGIC-1" />
+  </Module>
+  <Module Name="X20TB12" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12a" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12b" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12c" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12d" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12e" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12f" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB1F" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F1" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F2" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB32" Type="X20TB32" Version="1.0.0.1" />
+  <Module Name="X20TB52" Type="X20TB52" Version="1.0.0.1" />
+  <Module Name="X20TB52a" Type="X20TB52" Version="1.0.0.1" />
+  <Module Name="X20TB52b" Type="X20TB52" Version="1.0.0.1" />
+  <Module Name="X20TB52c" Type="X20TB52" Version="1.0.0.1" />
+  <Module Name="X67BC8321-1" Type="X67BC8321-1" Version="2.5.3.0">
+    <Connection Connector="PLK1" TargetModule="0AC808.9" TargetConnector="ETH4">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.1" />
+    </Connection>
+  </Module>
+  <Module Name="X67SI8103" Type="X67SI8103" Version="1.10.0.1">
+    <Connection Connector="X2X1" TargetModule="X67BC8321-1" TargetConnector="IF1">
+      <Cable Type="X2XCable" Length="10" Version="1.0.0.1" />
+    </Connection>
+    <Parameter ID="SafeModuleID" Value="4" />
+  </Module>
+</Hardware>

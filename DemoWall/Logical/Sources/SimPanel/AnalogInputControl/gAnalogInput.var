@@ -1,0 +1,4 @@
+VAR
+	gAnalogInput1 : gAnalogInputType;
+	gAnalogInput2 : gAnalogInputType;
+END_VAR

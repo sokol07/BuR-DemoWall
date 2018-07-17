@@ -1,0 +1,10 @@
+VAR
+	DigitalInput1 : DigitalInputType;
+	DigitalInput2 : DigitalInputType;
+	DigitalInput3 : DigitalInputType;
+	DigitalInput4 : DigitalInputType;
+	DigitalInput5 : DigitalInputType;
+	DigitalInput6 : DigitalInputType;
+	DigitalInput7 : DigitalInputType;
+	DigitalInput8 : DigitalInputType;
+END_VAR
