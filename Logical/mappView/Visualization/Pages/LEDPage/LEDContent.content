@@ -4,18 +4,20 @@
 
     <Widget xsi:type="widgets.brease.Label" id="Label1" top="40" left="620" width="80" height="30" zIndex="0" text="LED" fontSize="26px" bold="true" />
     <Widget xsi:type="widgets.brease.ToggleButton" id="LEDButton1" top="159" left="219" width="100" height="100" zIndex="1" text="LEDbtn1" cornerRadius="50px" backColor="rgba(219, 219, 219, 1)" fontSize="20px" enable="false" />
-    <Widget xsi:type="widgets.brease.ListBox" id="LEDColorSelector1" top="139" left="99" width="90" height="122" zIndex="2" dataProvider="[{'value':0,'text':'Red'},{'value':1,'text':'Yellow'},{'value':2,'text':'Green'}]" selectedValue="0" />
+    <Widget xsi:type="widgets.brease.ListBox" id="LEDColorSelector1" top="139" left="99" width="90" height="125" zIndex="2" dataProvider="[{'value':0,'text':'Red'},{'value':1,'text':'Yellow'},{'value':2,'text':'Green'}]" selectedValue="0" />
+
     <Widget xsi:type="widgets.brease.ToggleButton" id="LEDButton4" top="360" left="219" width="100" height="100" zIndex="3" text="LEDbtn4" cornerRadius="50px" backColor="rgba(219, 219, 219, 1)" fontSize="20px" enable="false" />
     <Widget xsi:type="widgets.brease.ToggleButton" id="LEDButton2" top="159" left="520" width="100" height="100" zIndex="4" text="LEDbtn2" cornerRadius="50px" backColor="rgba(219, 219, 219, 1)" fontSize="20px" enable="false" />
     <Widget xsi:type="widgets.brease.ToggleButton" id="LEDButton5" top="360" left="520" width="100" height="100" zIndex="5" text="LEDbtn5" cornerRadius="50px" backColor="rgba(219, 219, 219, 1)" fontSize="20px" enable="false" />
     <Widget xsi:type="widgets.brease.ToggleButton" id="LEDButton3" top="159" left="839" width="100" height="100" zIndex="6" text="LEDbtn3" cornerRadius="50px" backColor="rgba(219, 219, 219, 1)" fontSize="20px" enable="false" />
     <Widget xsi:type="widgets.brease.ToggleButton" id="LEDButton6" top="360" left="839" width="100" height="100" zIndex="7" text="LEDbtn6" cornerRadius="50px" backColor="rgba(219, 219, 219, 1)" fontSize="20px" enable="false" />
-    <Widget xsi:type="widgets.brease.ToggleButton" id="SafetyButton" top="260" left="1100" width="120" height="120" zIndex="8" text="SafetyBtn" cornerRadius="60px" backColor="rgba(219, 219, 219, 1)" fontSize="20px" enable="false" />
-    <Widget xsi:type="widgets.brease.ListBox" id="LEDColorSelector2" top="139" left="399" width="90" height="122" zIndex="9" dataProvider="[{'value':0,'text':'Red'},{'value':1,'text':'Yellow'},{'value':2,'text':'Green'}]" selectedValue="0" />
-    <Widget xsi:type="widgets.brease.ListBox" id="LEDColorSelector3" top="139" left="720" width="90" height="122" zIndex="10" dataProvider="[{'value':0,'text':'Red'},{'value':1,'text':'Yellow'},{'value':2,'text':'Green'}]" selectedValue="0" />
-    <Widget xsi:type="widgets.brease.ListBox" id="LEDColorSelector4" top="340" left="99" width="90" height="122" zIndex="11" dataProvider="[{'value':0,'text':'Red'},{'value':1,'text':'Yellow'},{'value':2,'text':'Green'}]" selectedValue="0" />
-    <Widget xsi:type="widgets.brease.ListBox" id="LEDColorSelector5" top="340" left="399" width="90" height="122" zIndex="12" dataProvider="[{'value':0,'text':'Red'},{'value':1,'text':'Yellow'},{'value':2,'text':'Green'}]" selectedValue="0" />
-    <Widget xsi:type="widgets.brease.ListBox" id="LEDColorSelector6" top="340" left="720" width="90" height="122" zIndex="13" dataProvider="[{'value':0,'text':'Red'},{'value':1,'text':'Yellow'},{'value':2,'text':'Green'}]" selectedValue="0" />
+
+    <Widget xsi:type="widgets.brease.ToggleButton" id="SafetyButton" top="260" left="1100" width="120" height="120" zIndex="8" text="SafetyBtn" cornerRadius="60px" backColor="rgba(219, 219, 219, 1)" fontSize="20px" checkedBackColor="rgba(255, 0, 0, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.ListBox" id="LEDColorSelector2" top="139" left="399" width="90" height="125" zIndex="9" dataProvider="[{'value':0,'text':'Red'},{'value':1,'text':'Yellow'},{'value':2,'text':'Green'}]" selectedValue="0" />
+    <Widget xsi:type="widgets.brease.ListBox" id="LEDColorSelector3" top="139" left="720" width="90" height="125" zIndex="10" dataProvider="[{'value':0,'text':'Red'},{'value':1,'text':'Yellow'},{'value':2,'text':'Green'}]" selectedValue="0" />
+    <Widget xsi:type="widgets.brease.ListBox" id="LEDColorSelector4" top="340" left="99" width="90" height="125" zIndex="11" dataProvider="[{'value':0,'text':'Red'},{'value':1,'text':'Yellow'},{'value':2,'text':'Green'}]" selectedValue="0" />
+    <Widget xsi:type="widgets.brease.ListBox" id="LEDColorSelector5" top="340" left="399" width="90" height="125" zIndex="12" dataProvider="[{'value':0,'text':'Red'},{'value':1,'text':'Yellow'},{'value':2,'text':'Green'}]" selectedValue="0" />
+    <Widget xsi:type="widgets.brease.ListBox" id="LEDColorSelector6" top="340" left="720" width="90" height="125" zIndex="13" dataProvider="[{'value':0,'text':'Red'},{'value':1,'text':'Yellow'},{'value':2,'text':'Green'}]" selectedValue="0" />
 
   </Widgets>
 </Content>

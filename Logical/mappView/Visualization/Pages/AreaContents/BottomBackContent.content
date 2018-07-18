@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="BottomBackContent" height="68" width="1366" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.NavigationButton" id="NavBtnHome" top="20" left="660" width="100" height="30" zIndex="0" pageId="MainPage" text="Home" />
-    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButtonBack" top="19" left="499" width="100" height="30" zIndex="1" pageId="AxesPage" text="Back" />
+
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavBtnHome" top="20" left="633" width="100" height="30" zIndex="0" pageId="MainPage" text="Home" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButtonBack" top="19" left="472" width="100" height="30" zIndex="1" pageId="AxesPage" text="Back" />
+
   </Widgets>
 </Content>

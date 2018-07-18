@@ -5,5 +5,9 @@
     <Object Type="File">circle.jpg</Object>
     <Object Type="File">circleRot.jpg</Object>
     <Object Type="File">images.jpg</Object>
+
+    <Object Type="File">axis_rotate.png</Object>
+    <Object Type="File">axis_rotate1.png</Object>
+
   </Objects>
 </Package>
