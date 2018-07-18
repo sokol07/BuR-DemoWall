@@ -1,0 +1,9 @@
+VAR
+	RotateValueAxis1 : USINT := 0;
+	ImageRotateAxis1 : BOOL;
+	MoveModeAxis2 : USINT;
+	MoveModeAxis1 : USINT;
+	ImageRotateAxis2 : BOOL;
+	RotateValueAxis2 : BOOL;
+	ElectronicGearMode : USINT;
+END_VAR

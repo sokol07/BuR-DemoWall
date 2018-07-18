@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="VisuBinding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+
+  
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:MoveModeAxis1" attribute="value" />
+<Target xsi:type="brease" contentRefId="Axis1Content" widgetRefId="RadioButtonGroup1" attribute="selectedIndex" />
+</Binding>
+
+
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:RotateValueAxis1" attribute="value" />
+<Target xsi:type="brease" contentRefId="Axis1Content" widgetRefId="ImageList1" attribute="selectedIndex" />
+</Binding>
+
+<Binding mode="oneWay">
+<Source xsi:type="brease" contentRefId="Axis1Content" widgetRefId="RadioButtonJog" attribute="value" />
+<Target xsi:type="brease" contentRefId="Axis1Content" widgetRefId="BtnJogLeft1" attribute="visible" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="brease" contentRefId="Axis1Content" widgetRefId="RadioButtonJog" attribute="value" />
+<Target xsi:type="brease" contentRefId="Axis1Content" widgetRefId="BtnJogRight1" attribute="visible" />
+</Binding>
+
+
+<Binding mode="twoWay">
+<Source xsi:type="brease" contentRefId="AlarmContent" widgetRefId="ToggleSwitchAlarm" attribute="value" />
+<Target xsi:type="brease" contentRefId="AlarmContent" widgetRefId="AlarmList1" attribute="visible" />
+</Binding>
+
+
+<Binding mode="twoWay">
+<Source xsi:type="brease" contentRefId="AxesContent" widgetRefId="ToggleSwitchAxis1" attribute="value" />
+<Target xsi:type="brease" contentRefId="Axis1Content" widgetRefId="RadioButtonGroup1" attribute="enable" />
+</Binding>
+		
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:RotateValueAxis1" attribute="value" />
+<Target xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="ImageList1" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:RotateValueAxis2" attribute="value" />
+<Target xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="ImageList2" attribute="selectedIndex" />
+</Binding>
+
+
+
+
+
+
+
+		
+<Binding mode="oneWay">
+<Source xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="ToggleSwitchPower2ax" attribute="value" />
+<Target xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="GroupBox1" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="ToggleSwitchSychMove" attribute="value" />
+<Target xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="GroupBoxElectronicGear1" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ElectronicGearMode" attribute="value" />
+<Target xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="RadioButtonGruopGear1" attribute="selectedIndex" />
+</Binding>
+</Bindings>
+</BindingsSet>
