@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExpressionTypeSet id="ExpressionType_1" xmlns="http://www.br-automation.com/iat2016/expressionType/v1">
+  <ExpressionTypes>
+   
+		<ExpressionType name="MyExpressionType1" datatype="BOOL">
+			<Operands>
+				<Operand name="inA" datatype="BOOL" />
+				<Operand name="inB" datatype="BOOL" />
+			</Operands>
+			<Operation>
+				inA AND inB
+			</Operation>
+		</ExpressionType>
+		
+  </ExpressionTypes>
+</ExpressionTypeSet>

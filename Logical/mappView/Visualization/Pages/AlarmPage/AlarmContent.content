@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="AlarmContent" height="700" width="1366" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="59" left="640" width="80" height="30" zIndex="0" text="Alarm" />
+
+    <Widget xsi:type="widgets.brease.AlarmHistory" id="AlarmHistory1" top="138" left="363" width="640" height="400" zIndex="1" itemsPerPage="12">
+
+      <Widgets>
+        <Widget xsi:type="widgets.brease.AlarmHistoryItem" id="AlarmHistoryItem1" width="200" zIndex="0" columnType="timestamp" text="Date and time" />
+        <Widget xsi:type="widgets.brease.AlarmHistoryItem" id="AlarmHistoryItem2" width="200" zIndex="1" text="Message" />
+        <Widget xsi:type="widgets.brease.AlarmHistoryItem" id="AlarmHistoryItem3" width="200" zIndex="2" columnType="instanceId" text="Alarm code" />
+      </Widgets>
+    </Widget>
+
+    <Widget xsi:type="widgets.brease.AlarmList" id="AlarmList1" top="138" left="363" width="640" height="400" zIndex="2" itemsPerPage="12">
+
+      <Widgets>
+        <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItem1" width="200" zIndex="0" columnType="timestamp" text="Date and time" />
+        <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItem2" width="200" zIndex="1" text="Message" />
+        <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItem3" width="200" zIndex="2" columnType="code" text="Alarm code" />
+      </Widgets>
+    </Widget>
+
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitchAlarm" top="560" left="583" width="200" height="30" zIndex="3" mouseDownText="Alarm list" text="Alarm history" backColor="rgba(255, 167, 38, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="Button1" top="460" left="200" width="143" height="40" zIndex="4" text="Acknowledge" />
+
+  </Widgets>
+</Content>
