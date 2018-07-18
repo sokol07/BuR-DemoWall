@@ -1,0 +1,12 @@
+VAR
+	RotateValueAxis1 : USINT := 0;
+	ImageRotateAxis1 : BOOL;
+	MoveModeAxis2 : USINT := 0;
+	MoveModeAxis1 : USINT := 0;
+	Axis1On : BOOL := FALSE;
+	Axis2On : BOOL := FALSE;
+	Axis3On : BOOL := FALSE;
+	Axis4On : BOOL := FALSE;
+	Axis5On : BOOL := FALSE;
+	Axis6On : BOOL := FALSE;
+END_VAR
