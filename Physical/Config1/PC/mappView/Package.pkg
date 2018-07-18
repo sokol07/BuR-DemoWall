@@ -4,5 +4,7 @@
   <Objects>
     <Object Type="File">Visualizat.vis</Object>
     <Object Type="File">Binding.binding</Object>
+    <Object Type="File">EventBinding.eventbinding</Object>
+
   </Objects>
 </Package>

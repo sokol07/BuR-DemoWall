@@ -19,7 +19,7 @@
     <BindingsSet refId="VisuBinding" />
   </BindingsSets>
   <EventBindingsSets>
-    <!--<EventBindingsSet refId="" />-->
+    <EventBindingsSet refId="EventBinding" />
   </EventBindingsSets>
   <Dialogs>
     <!--<Dialog refId="" />-->
@@ -31,7 +31,7 @@
     <!--<SnippetsSet refId=""/>-->
   </SnippetsSets>
   <ExpressionsSets>
-    <!--<ExpressionsSet refId=""/>-->
+    <ExpressionsSet refId="Expression_1"/>
   </ExpressionsSets>
   <VariablesSets>
     <!--<VariablesSet refId="" />-->

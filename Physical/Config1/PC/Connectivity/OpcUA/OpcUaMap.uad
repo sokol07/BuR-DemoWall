@@ -3,6 +3,7 @@
   <DefaultView>
     <Module>
       <GlobalVariables Name="Global PV">
+
         <Variable Name="ElectronicGearMode" Enable="True" />
         <Variable Name="ImageRotateAxis1" Enable="True" />
         <Variable Name="ImageRotateAxis2" Enable="True" />
@@ -10,6 +11,15 @@
         <Variable Name="MoveModeAxis2" Enable="True" />
         <Variable Name="RotateValueAxis1" Enable="True" />
         <Variable Name="RotateValueAxis2" Enable="True" />
+
+        <Variable Name="Axis1On" Enable="True" />
+        <Variable Name="Axis2On" Enable="True" />
+        <Variable Name="Axis3On" Enable="True" />
+        <Variable Name="Axis4On" Enable="True" />
+        <Variable Name="Axis5On" Enable="True" />
+        <Variable Name="Axis6On" Enable="True" />
+
+
       </GlobalVariables>
     </Module>
   </DefaultView>

@@ -7,13 +7,15 @@ PROGRAM _CYCLIC
 		RotateValueAxis1 :=  0;
 	END_IF
 
-	
-	
 	IF ImageRotateAxis2 AND RotateValueAxis2=0 THEN
 		RotateValueAxis2:= 1;
 	ELSIF ImageRotateAxis2 AND RotateValueAxis2=1 THEN
 		RotateValueAxis2:= 0;
 	END_IF
+
+		 
+	Axis1On;
+	
 	
 END_PROGRAM
 

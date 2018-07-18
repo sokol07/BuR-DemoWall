@@ -3,6 +3,7 @@
   <Assignments>
     <Assignment type="Content" baseContentRefId="PanelSimContent" areaRefId="AreaMain" backGround="" />
 
-    <Assignment type="Content" baseContentRefId="BottomContent" areaRefId="AreaBottom" />
+    <Assignment type="Content" baseContentRefId="BottomContent" areaRefId="AreaBottom" backColor="rgba(192, 192, 192, 1)" />
+
   </Assignments>
 </pdef:Page>

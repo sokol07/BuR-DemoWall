@@ -30,17 +30,13 @@
 <Target xsi:type="brease" contentRefId="AlarmContent" widgetRefId="AlarmList1" attribute="visible" />
 </Binding>
 
-
-<Binding mode="twoWay">
-<Source xsi:type="brease" contentRefId="AxesContent" widgetRefId="ToggleSwitchAxis1" attribute="value" />
-<Target xsi:type="brease" contentRefId="Axis1Content" widgetRefId="RadioButtonGroup1" attribute="enable" />
-</Binding>
 		
 
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:RotateValueAxis1" attribute="value" />
 <Target xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="ImageList1" attribute="selectedIndex" />
 </Binding>
+
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:RotateValueAxis2" attribute="value" />
 <Target xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="ImageList2" attribute="selectedIndex" />
@@ -48,9 +44,15 @@
 
 
 
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:Axis1On" attribute="value" />
+<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="ToggleSwitchAxis1" attribute="value" />
+</Binding>
 
-
-
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:Axis1On" attribute="value" />
+<Target xsi:type="brease" contentRefId="Axis1Content" widgetRefId="RadioButtonGroup1" attribute="enable" />
+</Binding>
 
 		
 <Binding mode="oneWay">
@@ -65,5 +67,73 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:ElectronicGearMode" attribute="value" />
 <Target xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="RadioButtonGruopGear1" attribute="selectedIndex" />
 </Binding>
+
+<Binding mode="oneWay">
+<Source xsi:type="brease" contentRefId="Axis1Content" widgetRefId="RadioButtonAdditive" attribute="value" />
+<Target xsi:type="brease" contentRefId="Axis1Content" widgetRefId="Label5" attribute="visible" />
+</Binding>
+
+<Binding mode="oneWay">
+<Source xsi:type="brease" contentRefId="Axis1Content" widgetRefId="RadioButtonAbsolute" attribute="value" />
+<Target xsi:type="brease" contentRefId="Axis1Content" widgetRefId="RadialSlider1" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="brease" contentRefId="Axis1Content" widgetRefId="RadioButtonAbsolute" attribute="value" />
+<Target xsi:type="brease" contentRefId="Axis1Content" widgetRefId="NumericInputPosition" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="brease" contentRefId="Axis1Content" widgetRefId="RadioButtonAbsolute" attribute="value" />
+<Target xsi:type="brease" contentRefId="Axis1Content" widgetRefId="Label6" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="brease" contentRefId="Axis1Content" widgetRefId="RadioButtonAdditive" attribute="value" />
+<Target xsi:type="brease" contentRefId="Axis1Content" widgetRefId="NumericInputDistance" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="brease" contentRefId="AxesContent" widgetRefId="ToggleSwitchAxis1" attribute="value" />
+<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="NavigationButton1" attribute="enable" />
+</Binding>
+
+<Binding mode="oneWay">
+<Source xsi:type="brease" contentRefId="AxesContent" widgetRefId="ToggleSwitchAxis6" attribute="value" />
+<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="NavigationButton6" attribute="enable" />
+</Binding>
+
+<Binding mode="oneWay">
+<Source xsi:type="brease" contentRefId="AxesContent" widgetRefId="ToggleSwitchAxis5" attribute="value" />
+<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="NavigationButton5" attribute="enable" />
+</Binding>
+
+<Binding mode="oneWay">
+<Source xsi:type="brease" contentRefId="AxesContent" widgetRefId="ToggleSwitchAxis4" attribute="value" />
+<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="NavigationButton4" attribute="enable" />
+</Binding>
+
+<Binding mode="oneWay">
+<Source xsi:type="brease" contentRefId="AxesContent" widgetRefId="ToggleSwitchAxis3" attribute="value" />
+<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="NavigationButton3" attribute="enable" />
+</Binding>
+
+<Binding mode="oneWay">
+<Source xsi:type="brease" contentRefId="AxesContent" widgetRefId="ToggleSwitchAxis2" attribute="value" />
+<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="NavigationButton2" attribute="enable" />
+</Binding>
+		
+		
+<Binding mode="oneWay">
+	<Source xsi:type="brease" widgetRefId="ToggleSwitchAxis1" contentRefId="AxesContent" attribute="value" />
+	<Target xsi:type="expression" refId="ToggleSwAND" attribute="inA" />
+</Binding>	
+<Binding mode="oneWay">
+	<Source xsi:type="brease" widgetRefId="ToggleSwitchAxis2" contentRefId="AxesContent" attribute="value" />
+	<Target xsi:type="expression" refId="ToggleSwAND" attribute="inB" />
+</Binding>
+		
+<Binding mode="oneWay">
+	<Source xsi:type="expression" refId="ToggleSwAND" attribute="result" />
+	<Target xsi:type="brease" widgetRefId="NavigationButtonTwoAxes" contentRefId="AxesContent" attribute="enable" />
+</Binding>
+		
+
 </Bindings>
 </BindingsSet>

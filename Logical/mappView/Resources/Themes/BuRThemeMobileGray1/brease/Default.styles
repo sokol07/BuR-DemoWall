@@ -254,6 +254,7 @@
 	
 		<Style id="default" xsi:type="widgets.brease.NumericOutput" 
 			textColor="#000000" 
+
 			borderWidth="0px" 
 			fontSize="16px" 
 			backColor = "#CCCAB5" 
@@ -261,6 +262,7 @@
 			cornerRadius= "10px" 
 			textAlign = "center" 
 			shadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)" />
+
 
 	
 		<!--text input-->
