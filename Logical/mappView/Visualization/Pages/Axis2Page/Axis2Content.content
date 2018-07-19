@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="Axis2Content" height="700" width="1366" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
+
     <Widget xsi:type="widgets.brease.Label" id="Label1Axis2" top="20" left="580" width="122" height="30" zIndex="0" text="Axis 2" fontSize="26px" bold="true" />
     <Widget xsi:type="widgets.brease.Label" id="Label2Axis2" top="60" left="60" width="201" height="30" zIndex="1" text="Choose move mode:" bold="true" />
     <Widget xsi:type="widgets.brease.RadioButtonGroup" id="RadioButtonGroupAxis2" top="98" left="59" width="241" height="162" zIndex="2">
@@ -40,5 +41,6 @@
     <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButtonMoveAxis2" top="100" left="460" width="100" height="80" zIndex="18" text="MOVE" />
     <Widget xsi:type="widgets.brease.Button" id="ButtonStopAxis2" top="100" left="620" width="100" height="80" zIndex="19" text="STOP" />
     <Widget xsi:type="widgets.brease.Label" id="LabelHomedAxis2" top="520" left="59" width="163" height="60" zIndex="20" breakWord="true" multiLine="true" text="Axis is homed, move permitted." textAlign="center" bold="true" />
+
   </Widgets>
 </Content>

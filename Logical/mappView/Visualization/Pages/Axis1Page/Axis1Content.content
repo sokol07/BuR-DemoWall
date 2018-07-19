@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="Axis1Content" height="700" width="1366" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
+
     <Widget xsi:type="widgets.brease.Label" id="Label1Axis1" top="20" left="580" width="122" height="30" zIndex="0" text="Axis 1" fontSize="26px" bold="true" />
     <Widget xsi:type="widgets.brease.Label" id="Label2Axis1" top="60" left="60" width="201" height="30" zIndex="1" text="Choose move mode:" bold="true" />
     <Widget xsi:type="widgets.brease.RadioButtonGroup" id="RadioButtonGroupAxis1" top="98" left="59" width="241" height="162" zIndex="2">
@@ -15,17 +16,21 @@
     <Widget xsi:type="widgets.brease.MomentaryPushButton" id="BtnJogLeftAxis1" top="80" left="880" width="89" height="55" zIndex="4" text="Jog left" visible="false" />
     <Widget xsi:type="widgets.brease.MomentaryPushButton" id="BtnJogRightAxis1" top="80" left="1180" width="89" height="55" zIndex="5" text="Jog right" visible="false" />
     <Widget xsi:type="widgets.brease.OnlineChart" id="OnlineChartAxis1" top="380" left="720" width="576" height="280" zIndex="6">
+
       <Widgets>
         <Widget xsi:type="widgets.brease.OnlineChartTimeAxis" id="OnlineChartTimeAxis1" height="30" zIndex="0">
           <Widgets />
         </Widget>
         <Widget xsi:type="widgets.brease.OnlineChartYAxis" id="OnlineChartYAxis1" width="60" zIndex="1">
           <Widgets>
+
             <Widget xsi:type="widgets.brease.OnlineChartGraph" id="OnlineChartGraphAxis1" zIndex="0" xAxisRefId="OnlineChartTimeAxis1" />
+
           </Widgets>
         </Widget>
       </Widgets>
     </Widget>
+
     <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputVelocityAxis1" top="280" left="180" width="100" height="30" zIndex="7" />
     <Widget xsi:type="widgets.brease.Label" id="Label3Axis1" top="280" left="60" width="100" height="30" zIndex="8" text="Velocity:" textAlign="right" />
     <Widget xsi:type="widgets.brease.BasicSlider" id="BasicSliderVelocityAxis1" top="280" left="300" width="250" height="20" zIndex="9" />
@@ -40,5 +45,6 @@
     <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButtonMoveAxis1" top="100" left="460" width="100" height="80" zIndex="18" text="MOVE" />
     <Widget xsi:type="widgets.brease.Button" id="ButtonStopAxis1" top="100" left="620" width="100" height="80" zIndex="19" text="STOP" />
     <Widget xsi:type="widgets.brease.Label" id="LabelHomedAxis1" top="520" left="59" width="163" height="60" zIndex="20" breakWord="true" multiLine="true" text="Axis is homed, move permitted." textAlign="center" bold="true" />
+
   </Widgets>
 </Content>
