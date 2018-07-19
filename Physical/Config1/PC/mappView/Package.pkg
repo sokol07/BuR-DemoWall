@@ -5,6 +5,7 @@
     <Object Type="File">Visualizat.vis</Object>
     <Object Type="File">Binding.binding</Object>
     <Object Type="File">EventBinding.eventbinding</Object>
-
+    <Object Type="File">BindingAxis2.binding</Object>
+    <Object Type="File">BindingAxis1.binding</Object>
   </Objects>
 </Package>

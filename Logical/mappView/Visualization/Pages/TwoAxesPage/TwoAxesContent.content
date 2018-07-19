@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="TwoAxesContent" height="700" width="1366" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
+
     <Widget xsi:type="widgets.brease.Label" id="Label1" top="20" left="618" width="122" height="30" zIndex="0" text="Two Axes" />
     <Widget xsi:type="widgets.brease.ImageList" id="ImageList1" top="360" left="100" width="281" height="280" zIndex="1" imageList="['axis_rotate.png', 'axis_rotate1.png']" imagePrefix="Media/Images/" borderWidth="0px" shadow="none" />
     <Widget xsi:type="widgets.brease.ImageList" id="ImageList2" top="360" left="986" width="281" height="280" zIndex="2" imageList="['axis_rotate.png', 'axis_rotate1.png']" imagePrefix="Media/Images/" borderWidth="0px" shadow="none" />
@@ -25,5 +26,6 @@
         <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitchSychMove" top="220" left="110" width="260" height="31" zIndex="3" mouseDownText="Electronig gear" text="Synchronus movement" backColor="rgba(255, 167, 38, 1)" />
       </Widgets>
     </Widget>
+
   </Widgets>
 </Content>

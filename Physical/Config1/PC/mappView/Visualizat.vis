@@ -17,6 +17,8 @@
   </Navigations>  
   <BindingsSets>
     <BindingsSet refId="VisuBinding" />
+	<BindingsSet refId="BindingAxis1" />
+	<BindingsSet refId="BindingAxis2" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="EventBinding" />

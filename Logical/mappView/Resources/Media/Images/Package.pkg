@@ -7,11 +7,19 @@
     <Object Type="File">images.jpg</Object>
     <Object Type="File">axis_rotate.png</Object>
     <Object Type="File">axis_rotate1.png</Object>
+
+    <Object Type="File">BuR.png</Object>
+    <Object Type="File">warning.png</Object>
+    <Object Type="File">tlo.jpg</Object>
+    <Object Type="File">Home-512.png</Object>
+    <Object Type="File">back.png</Object>
+
     <Object Type="File">settings.png</Object>
     <Object Type="File">motor.png</Object>
     <Object Type="File">warning2.png</Object>
     <Object Type="File">switch-off.png</Object>
     <Object Type="File">BuR.png</Object>
     <Object Type="File">lampka_logo.png</Object>
+
   </Objects>
 </Package>

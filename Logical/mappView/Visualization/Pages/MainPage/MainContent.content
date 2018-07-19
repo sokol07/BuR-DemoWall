@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="MainContent" height="700" width="1366" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
+
     <Widget xsi:type="widgets.brease.NavigationButton" id="NavBtnPanelSim" top="200" left="540" width="200" height="123" zIndex="0" image="Media/Images/switch-off.png" imageAlign="bottom" pageId="PanelSimPage" text="PanelSim Page" imageHeight="70" fontSize="20px" />
     <Widget xsi:type="widgets.brease.NavigationButton" id="NavBtnAxes" top="59" left="839" width="200" height="123" zIndex="1" image="Media/Images/Bez%20nazwy-5.png" imageAlign="bottom" pageId="AxesPage" text="Axes Page" imageHeight="70" imageWidth="0" fontSize="20px" />
     <Widget xsi:type="widgets.brease.NavigationButton" id="NavBtnSettings" top="200" left="1140" width="200" height="123" zIndex="2" image="Media/Images/settings.png" imageAlign="bottom" pageId="SettingsPage" text="Settings Page" imageHeight="80" imageWidth="0" fontSize="20px" />
     <Widget xsi:type="widgets.brease.NavigationButton" id="NavBtnAlarm" top="478" left="640" width="200" height="123" zIndex="3" image="Media/Images/warning2.png" imageAlign="bottom" pageId="AlarmPage" text="Alarm Page" imageHeight="80" imageWidth="0" fontSize="20px" />
     <Widget xsi:type="widgets.brease.NavigationButton" id="NavBtnLED" top="478" left="1038" width="200" height="123" zIndex="4" image="Media/Images/lampka_logo.png" imageAlign="bottom" pageId="LEDPage" text="LED Page" imageHeight="80" imageWidth="0" fontSize="20px" />
     <Widget xsi:type="widgets.brease.Image" id="Image1" top="260" left="820" width="240" height="142" zIndex="5" image="Media/Images/BuR.png" />
+
   </Widgets>
 </Content>
