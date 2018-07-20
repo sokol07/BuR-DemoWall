@@ -1,0 +1,15 @@
+VAR
+	MpAxisCoupling_0 : MpAxisCoupling;
+	AxisCouplingParam : MpAxisCouplingParType;
+	AxisParam1 : MpAxisBasicParType;
+	AxisParam2 : MpAxisBasicParType;
+	GearRatio : REAL;
+	SynchroOn : BOOL;
+	velocity : REAL;
+	GearRation05 : BOOL;
+	GearRation025 : BOOL;
+	GearRation01 : BOOL;
+	GearRation2 : BOOL;
+	GearRation4 : BOOL;
+	GearRation10 : BOOL;
+END_VAR
