@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="EventBindingAxis2" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+    
+	<!--================================== AXIS 2 ========================================== -->	
+
+	<EventBinding>	<!--przycisk stop robi stop i wylacza move -->
+		<Source xsi:type="widgets.brease.Button.Event" contentRefId="Axis2Content" widgetRefId="ButtonStopAxis2" event="Click" />
+		<EventHandler>
+			<Action>
+				<Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="Axis2Content" widgetRefId="ToggleButtonMoveAxis2" >
+					<Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="0" />
+				</Target>
+			</Action>
+		</EventHandler>
+		<EventHandler>
+			<Action>
+				<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gDriveAxisAcoposMicroServo.Command.Stop" serverAlias="Alias1" >
+					<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+				</Target>		
+			</Action>
+		</EventHandler>
+	</EventBinding>	
+
+
+	<EventBinding>	<!--przycisk homing  -->
+		<Source xsi:type="widgets.brease.Button.Event" contentRefId="Axis2Content" widgetRefId="ButtonHomingAxis2" event="Click" />
+		<EventHandler>
+			<Action>
+				<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gDriveAxisAcoposMicroServo.Command.Home" serverAlias="Alias1">
+					<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+				</Target>
+			</Action>
+		</EventHandler>
+	</EventBinding>	
+
+	<EventBinding>	<!--przycisk error reset  -->
+		<Source xsi:type="widgets.brease.Button.Event" contentRefId="Axis2Content" widgetRefId="ButtonErrorReset2" event="Click" />
+		<EventHandler>
+			<Action>
+				<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gDriveAxisAcoposMicroServo.Command.ErrorReset" serverAlias="Alias1" >
+					<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+				</Target>
+			</Action>
+		</EventHandler>
+	</EventBinding>	
+
+	<EventBinding>   	<!-- obrazek  -->
+		<Source xsi:type="widgets.brease.ToggleButton.Event" contentRefId="Axis2Content" widgetRefId="ToggleButtonMoveAxis2" event="ValueChanged" />
+		<EventHandler condition="newValue">
+			<Action>
+				<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:ImageRotateAxis2" >
+					<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+				</Target>
+			</Action>
+		</EventHandler>
+		<EventHandler condition="NOT newValue">
+			<Action>
+				<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:ImageRotateAxis2" >
+					<Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+				</Target>
+			</Action>	
+		</EventHandler>
+	</EventBinding>		
+
+	
+	<EventBinding>   	<!-- sterowanie sie wylacza gdy jest jog  -->
+		<Source xsi:type="widgets.brease.MomentaryPushButton.Event" contentRefId="Axis2Content" widgetRefId="BtnJogLeftAxis2" event="VisibleChanged" />
+		<EventHandler condition="newValue">
+			<Action>
+				<Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="Axis2Content" widgetRefId="GroupBoxSterowanie2" >
+					<Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="false" />
+				</Target>
+			</Action>
+		</EventHandler>
+		<EventHandler condition="NOT newValue">
+			<Action>
+				<Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="Axis2Content" widgetRefId="GroupBoxSterowanie2" >
+					<Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="true" />
+				</Target>
+			</Action>	
+		</EventHandler>
+	</EventBinding>	
+
+	<EventBinding>   	<!-- update predkosci   -->
+		<Source xsi:type="widgets.brease.NumericInput.Event" contentRefId="Axis2Content" widgetRefId="NumericInputVelocityAxis2" event="ValueChanged" />
+		<EventHandler>
+			<Action>
+				<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gDriveAxisAcoposMicroServo.Command.Update" >
+					<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+				</Target>
+			</Action>
+		</EventHandler>
+	</EventBinding>			
+	
+  </Bindings>
+</EventBindingSet>

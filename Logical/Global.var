@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-
 VAR
-
-END_VAR
-
-VAR CONSTANT
-
-=======
-VAR
-	ZmiennaKamila : TypDanych;
->>>>>>> Kamil
+	ZmiennaKamila : USINT;
 END_VAR

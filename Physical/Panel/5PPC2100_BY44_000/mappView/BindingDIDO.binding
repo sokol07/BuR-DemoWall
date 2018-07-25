@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="BindingDIDO" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+		
+		<!--=============================================== CP1382 ======================================================== -->	
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.ModuleId" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="TextOutputCP1382ModuId" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.HardwareVariant" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="TextOutputCP1382Hardware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.FirmwareVersion" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="TextOutputCP1382Firmware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.SerialNumber" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="TextOutputCP1382Serial" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.TempCPU" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="NumericOutputCP1382CPU" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.TempENV" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="NumericOutputCP1382ENV" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.SysTime" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="NumericOutputCP1382SYS" attribute="value" />
+		</Binding>
+		<!--=============================================== X1 ======================================================== -->
+
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X1.DigitalInput1" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX1DI1" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X1.DigitalInput2" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX1DI2" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X1.DigitalInput3" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX1DI3" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X1.DigitalInput4" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX1DI4" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X1.AnalogInput1" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="NumericOutputX1AI1" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X1.AnalogInput2" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="NumericOutputX1AI2" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X1.StatusInput1" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="NumericOutputX1Status" attribute="value" />
+		</Binding>
+		
+		<!--=============================================== X2 ======================================================== -->
+
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X2.DigitalInput1" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX2DI1" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X2.DigitalInput2" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX2DI2" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X2.DigitalInput3" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX2DI3" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X2.DigitalInput4" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX2DI4" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X2.DigitalInput5" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX2DI5" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X2.DigitalInput6" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX2DI6" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X2.DigitalInput7" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX2DI7" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X2.DigitalInput8" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX2DI8" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X2.DigitalInput9" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX2DI9" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X2.DigitalInput10" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX2DI10" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X2.DigitalInput11" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX2DI11" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X2.DigitalInput12" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX2DI12" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X2.DigitalInput13" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX2DI13" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X2.DigitalInput14" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX2DI14" attribute="value" />
+		</Binding>
+		
+		<!--=============================================== X3 ======================================================== -->
+
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X3.DigitalOutput1" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX3DO1" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X3.DigitalOutput2" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX3DO2" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X3.DigitalOutput3" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX3DO3" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X3.DigitalOutput4" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX3DO4" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X3.DigitalOutput5" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX3DO5" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X3.DigitalOutput6" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX3DO6" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X3.DigitalOutput7" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX3DO7" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X3.DigitalOutput8" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX3DO8" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X3.DigitalOutput9" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX3DO9" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X3.DigitalOutput10" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX3DO10" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X3.DigitalOutput11" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX3DO11" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:CP1382.X3.DigitalOutput12" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX3DO12" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" serverAlias="Alias1" refId="::AsGlobalPV:CP1382.X3.StatusInput1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnX3Status" attribute="value" />
+		</Binding>
+
+		<!--=================================== X20DO9322 =======================================-->
+		<Binding mode="oneWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:DO9322.ModuleOK" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDOModOK" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:DO9322.SerialNumber" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="TextOutputDOSerial" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:DO9322.ModuleId" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="TextOutputDOModuleID" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:DO9322.HardwareVariant" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="TextOutputDOHardware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:DO9322.FirmwareVersion" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="TextOutputDOFirmware" attribute="value" />
+		</Binding>
+
+		<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::DigitalOup:DigitalOutput1.Status" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDO1" attribute="value" />
+		</Binding>
+
+
+		<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::DigitalOup:DigitalOutput2.Status" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDO2" attribute="value" />
+		</Binding>
+
+		<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::DigitalOup:DigitalOutput3.Status" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDO3" attribute="value" />
+		</Binding>
+
+
+		<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::DigitalOup:DigitalOutput4.Status" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDO4" attribute="value" />
+		</Binding>
+
+
+		<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:DO9322.DigitalOutput5" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDO5" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:DO9322.DigitalOutput6" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDO6" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:DO9322.DigitalOutput7" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDO7" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:DO9322.DigitalOutput8" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDO8" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:DO9322.DigitalOutput9" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDO9" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:DO9322.DigitalOutput10" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDO10" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:DO9322.DigitalOutput11" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDO11" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:DO9322.DigitalOutput12" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDO12" attribute="value" />
+		</Binding>
+
+		<!--==================================== X20DI9371 ============================================-->
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:DI9371.ModuleOK" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDIModOK" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:DI9371.SerialNumber" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="TextOutputDISerial" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:DI9371.ModuleId" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="TextOutputDIModuleID" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:DI9371.HardwareVariant" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="TextOutputDIHardware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:DI9371.FirmwareVersion" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="TextOutputDIFirmware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::DigitalInp:DigitalInput1.Status" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDI1" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::DigitalInp:DigitalInput2.Status" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDI2" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::DigitalInp:DigitalInput3.Status" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDI3" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::DigitalInp:DigitalInput4.Status" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDI4" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::DigitalInp:DigitalInput5.Status" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDI5" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::DigitalInp:DigitalInput6.Status" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDI6" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::DigitalInp:DigitalInput7.Status" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDI7" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::DigitalInp:DigitalInput8.Status" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDI8" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:DI9371.DigitalInput9" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDI9" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:DI9371.DigitalInput10" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDI10" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:DI9371.DigitalInput11" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDI11" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:DI9371.DigitalInput12" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnDI12" attribute="value" />
+		</Binding>
+		
+		<!--========================================= X20BT9400 ===============================-->
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BT9400.ModuleOK" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnBT9400ModOK" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BT9400.SerialNumber" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="TextOutputBT9400Serial" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BT9400.ModuleId" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="TextOutputBT9400ModuleID" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BT9400.HardwareVariant" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="TextOutputBT9400Hardware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BT9400.FirmwareVersion" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="TextOutputBT9400Firmware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BT9400.StatusInput1" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnBT9400StatusInp1" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BT9400.StatusInput2" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DIDOContent" widgetRefId="ToggleBtnBT9400StatusInp2" attribute="value" />
+		</Binding>
+		
+  </Bindings>
+</BindingsSet>

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="BindingAxis2" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+		
+
+
+<Binding mode="oneWay">
+	<Source xsi:type="opcUa" refId="::AsGlobalPV:RotateValueAxis2" attribute="value" />
+	<Target xsi:type="brease" contentRefId="Axis2Content" widgetRefId="ImageListAxis2" attribute="selectedIndex" />
+</Binding>
+
+<Binding mode="oneWay">
+	<Source xsi:type="brease" contentRefId="Axis2Content" widgetRefId="RadioButtonJogAxis2" attribute="value" />
+	<Target xsi:type="brease" contentRefId="Axis2Content" widgetRefId="BtnJogLeftAxis2" attribute="visible" />
+</Binding>
+
+<Binding mode="twoWay">
+	<Source xsi:type="brease" contentRefId="Axis2Content" widgetRefId="RadioButtonJogAxis2" attribute="value" />
+	<Target xsi:type="brease" contentRefId="Axis2Content" widgetRefId="BtnJogRightAxis2" attribute="visible" />
+</Binding>
+		
+<Binding mode="oneWay">
+	<Source xsi:type="brease" contentRefId="Axis2Content" widgetRefId="RadioButtonAdditiveAxis2" attribute="value" />
+	<Target xsi:type="brease" contentRefId="Axis2Content" widgetRefId="Label5Axis2" attribute="visible" />
+</Binding>
+
+<Binding mode="oneWay">
+	<Source xsi:type="brease" contentRefId="Axis2Content" widgetRefId="RadioButtonAbsoluteAxis2" attribute="value" />
+	<Target xsi:type="brease" contentRefId="Axis2Content" widgetRefId="RadialSliderAxis2" attribute="visible" />
+</Binding>
+		
+<Binding mode="oneWay">
+	<Source xsi:type="brease" contentRefId="Axis2Content" widgetRefId="RadioButtonAbsoluteAxis2" attribute="value" />
+	<Target xsi:type="brease" contentRefId="Axis2Content" widgetRefId="NumericInputPositionAxis2" attribute="visible" />
+</Binding>
+		
+<Binding mode="oneWay">
+	<Source xsi:type="brease" contentRefId="Axis2Content" widgetRefId="RadioButtonAbsoluteAxis2" attribute="value" />
+	<Target xsi:type="brease" contentRefId="Axis2Content" widgetRefId="Label6Axis2" attribute="visible" />
+</Binding>
+		
+<Binding mode="oneWay">
+	<Source xsi:type="brease" contentRefId="Axis2Content" widgetRefId="RadioButtonAdditiveAxis2" attribute="value" />
+	<Target xsi:type="brease" contentRefId="Axis2Content" widgetRefId="NumericInputDistanceAxis2" attribute="visible" />
+</Binding>
+
+		
+<Binding mode="oneWay">
+	<Source xsi:type="brease" widgetRefId="RadioButtonContinousAxis2" contentRefId="Axis2Content" attribute="value" />
+	<Target xsi:type="expression" refId="ORaxis2" attribute="inA" />
+</Binding>
+
+<Binding mode="oneWay">
+	<Source xsi:type="brease" widgetRefId="RadioButtonAdditiveAxis2" contentRefId="Axis2Content" attribute="value" />
+	<Target xsi:type="expression" refId="ORaxis2" attribute="inB" />
+</Binding>
+
+<Binding mode="oneWay">
+	<Source xsi:type="expression" refId="ORaxis2" attribute="result" />
+	<Target xsi:type="brease" widgetRefId="GroupBoxDirection2" contentRefId="Axis2Content" attribute="visible" />
+</Binding>	
+			
+		
+		
+		
+		
+<!--=============================================== OPCUA AXIS 2 PAGE ========================================================= -->		
+<Binding mode="twoWay">  <!-- wybor trybu -->
+	<Source xsi:type="brease" contentRefId="Axis2Content" widgetRefId="RadioButtonGroupAxis2" attribute="selectedIndex" />
+	<Target xsi:type="opcUa"  refId="::AsGlobalPV:gDriveAxisAcoposMicroServo.Command.MoveMode" serverAlias="Alias1" attribute="value" />
+</Binding>				
+
+<Binding mode="twoWay">  <!-- predkosc -->
+	<Source xsi:type="brease" contentRefId="Axis2Content" widgetRefId="NumericInputVelocityAxis2" attribute="value" />
+	<Target xsi:type="opcUa"  refId="::AsGlobalPV:gDriveAxisAcoposMicroServo.Command.SetVelocity" serverAlias="Alias1" attribute="value" />
+</Binding>		
+
+<Binding mode="twoWay">  <!-- predkosc slider -->
+	<Source xsi:type="brease" contentRefId="Axis2Content" widgetRefId="BasicSliderVelocityAxis2" attribute="value" />
+	<Target xsi:type="brease" contentRefId="Axis2Content" widgetRefId="NumericInputVelocityAxis2" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">   <!-- dystans -->
+	<Source xsi:type="brease" contentRefId="Axis2Content" widgetRefId="NumericInputDistanceAxis2" attribute="value" />
+	<Target xsi:type="opcUa"  refId="::AsGlobalPV:gDriveAxisAcoposMicroServo.Command.SetDistance" serverAlias="Alias1" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">  <!-- pozycja numerin in -->
+	<Source xsi:type="brease" contentRefId="Axis2Content" widgetRefId="NumericInputPositionAxis2" attribute="value" />
+	<Target xsi:type="opcUa"  refId="::AsGlobalPV:gDriveAxisAcoposMicroServo.Command.SetPosition" serverAlias="Alias1" attribute="value" />
+</Binding>	
+
+<Binding mode="twoWay">   <!-- pozycja slider -->
+	<Source xsi:type="brease" contentRefId="Axis2Content" widgetRefId="RadialSliderAxis2" attribute="value" />
+	<Target xsi:type="brease" contentRefId="Axis2Content" widgetRefId="NumericInputPositionAxis2" attribute="value" />
+</Binding>	
+
+<Binding mode="twoWay">   <!-- kierunek -->
+	<Source xsi:type="brease" contentRefId="Axis2Content" widgetRefId="ToggleSwitchDirectionAxis2" attribute="value" />
+	<Target xsi:type="opcUa"  refId="::AsGlobalPV:gDriveAxisAcoposMicroServo.Command.SetDirection" serverAlias="Alias1" attribute="value" />
+</Binding>					
+
+<Binding mode="oneWay">  <!-- is homed label -->
+	<Source xsi:type="opcUa"  refId="::AsGlobalPV:gDriveAxisAcoposMicroServo.Status.Homed" serverAlias="Alias1" attribute="value" />
+	<Target xsi:type="brease" contentRefId="Axis2Content" widgetRefId="LabelHomedAxis2" attribute="visible" />
+</Binding>		
+
+<Binding mode="twoWay">   <!-- przycisk move -->
+	<Source xsi:type="brease" contentRefId="Axis2Content" widgetRefId="ToggleButtonMoveAxis2" attribute="value" />
+	<Target xsi:type="opcUa"  refId="::AsGlobalPV:gDriveAxisAcoposMicroServo.Command.Start" serverAlias="Alias1" attribute="value" />
+</Binding>			
+
+<Binding mode="twoWay">   <!-- przycisk jog left -->
+	<Source xsi:type="brease" contentRefId="Axis2Content" widgetRefId="BtnJogLeftAxis2" attribute="value" />
+	<Target xsi:type="opcUa"  refId="::AsGlobalPV:gDriveAxisAcoposMicroServo.Command.JogLeft" serverAlias="Alias1" attribute="value" />
+</Binding>		
+
+<Binding mode="twoWay">   <!-- przycisk jog right -->
+	<Source xsi:type="brease" contentRefId="Axis2Content" widgetRefId="BtnJogRightAxis2" attribute="value" />
+	<Target xsi:type="opcUa"  refId="::AsGlobalPV:gDriveAxisAcoposMicroServo.Command.JogRight" serverAlias="Alias1" attribute="value" />
+</Binding>
+
+<Binding mode="oneWay">  <!-- error status label -->
+	<Source xsi:type="opcUa"  refId="::AsGlobalPV:gDriveAxisAcoposMicroServo.Status.Error" serverAlias="Alias1" attribute="value" />
+	<Target xsi:type="brease" contentRefId="Axis2Content" widgetRefId="ErrorLabel2" attribute="visible" />
+</Binding>		
+
+<Binding mode="oneWay">  <!-- chart  -->
+	<Source xsi:type="opcUa"  refId="::AsGlobalPV:gDriveAxisAcoposMicroServo.Status.Velocity" serverAlias="Alias1" attribute="value" />
+	<Target xsi:type="brease" contentRefId="Axis2Content" widgetRefId="OnlineChartGraphAxis2" attribute="value" />
+</Binding>				
+		
+  </Bindings>
+</BindingsSet>

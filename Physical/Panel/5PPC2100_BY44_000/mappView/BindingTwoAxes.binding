@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="BindingTwoAxes" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+		
+	<!--================================================== TWO AXES PAGE ======================================================== -->
+
+	<Binding mode="oneWay">  <!-- predkosc axis1 -->
+		<Source xsi:type="opcUa"  refId="::AsGlobalPV:gDriveAxisAcoposMicroStepper.Status.Velocity" serverAlias="Alias1" attribute="value" />
+		<Target	xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="NumericOutputAx1" attribute="value" />
+	</Binding>		
+
+	<Binding mode="oneWay">  <!-- predkosc axis2 -->
+		<Source xsi:type="opcUa"  refId="::AsGlobalPV:gDriveAxisAcoposMicroServo.Status.Velocity" serverAlias="Alias1" attribute="value" />
+		<Target	xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="NumericOutputAx2" attribute="value" />
+	</Binding>
+	
+	<Binding mode="twoWay">  <!-- predkosc sychro -->
+		<Source xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="NumericInput2" attribute="value" />
+		<Target xsi:type="brease" contentRefId="Axis2Content" widgetRefId="BasicSliderVelocityAxis2" attribute="value" />
+	</Binding>		
+
+	<Binding mode="twoWay">  <!-- predkosc synchro slider -->
+		<Source xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="SliderVelocity2ax" attribute="value" />
+		<Target xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="NumericInput2" attribute="value" />
+	</Binding>
+		
+	<Binding mode="twoWay">  <!-- synchro on switch -->
+		<Source xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="ToggleSwitchPower2ax" attribute="value" />
+		<Target xsi:type="opcUa"  refId="::AsGlobalPV:gDriveSynchro.SynchroOn" serverAlias="Alias1" attribute="value" />
+	</Binding>	
+	
+	<Binding mode="twoWay">  <!-- gear ratio -->
+		<Source xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="RadioButtonGruopGear1" attribute="selectedIndex" />
+		<Target xsi:type="opcUa"  refId="::AsGlobalPV:gDriveSynchro.GearRatio" serverAlias="Alias1" attribute="value" />
+	</Binding>	
+		
+	<Binding mode="twoWay">  <!-- movement mode switch -->
+		<Source xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="ToggleSwitchSychMove" attribute="value" />
+		<Target xsi:type="opcUa"  refId="::AsGlobalPV:gDriveSynchro.ManualMovement" serverAlias="Alias1" attribute="value" />
+	</Binding>
+			
+  </Bindings>
+</BindingsSet>

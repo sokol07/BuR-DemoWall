@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="VisuBinding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:RotateValueAxis1" attribute="value" />
+<Target xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="ImageList1" attribute="selectedIndex" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:RotateValueAxis2" attribute="value" />
+<Target xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="ImageList2" attribute="selectedIndex" />
+</Binding>
+
+
+<Binding mode="oneWay">
+<Source xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="ToggleSwitchPower2ax" attribute="value" />
+<Target xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="GroupBox1" attribute="enable" />
+</Binding>
+
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ElectronicGearMode" attribute="value" />
+<Target xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="RadioButtonGruopGear1" attribute="selectedIndex" />
+</Binding>
+
+
+<Binding mode="oneWay">
+<Source xsi:type="brease" contentRefId="AxesContent" widgetRefId="ToggleSwitchAxis1" attribute="value" />
+<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="NavigationButton1" attribute="enable" />
+</Binding>
+
+<Binding mode="oneWay">
+<Source xsi:type="brease" contentRefId="AxesContent" widgetRefId="ToggleSwitchAxis6" attribute="value" />
+<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="NavigationButton6" attribute="enable" />
+</Binding>
+
+<Binding mode="oneWay">
+<Source xsi:type="brease" contentRefId="AxesContent" widgetRefId="ToggleSwitchAxis5" attribute="value" />
+<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="NavigationButton5" attribute="enable" />
+</Binding>
+
+<Binding mode="oneWay">
+<Source xsi:type="brease" contentRefId="AxesContent" widgetRefId="ToggleSwitchAxis4" attribute="value" />
+<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="NavigationButton4" attribute="enable" />
+</Binding>
+
+<Binding mode="oneWay">
+<Source xsi:type="brease" contentRefId="AxesContent" widgetRefId="ToggleSwitchAxis3" attribute="value" />
+<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="NavigationButton3" attribute="enable" />
+</Binding>
+
+<Binding mode="oneWay">
+<Source xsi:type="brease" contentRefId="AxesContent" widgetRefId="ToggleSwitchAxis2" attribute="value" />
+<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="NavigationButton2" attribute="enable" />
+</Binding>		
+
+		
+<Binding mode="oneWay">
+	<Source xsi:type="brease" widgetRefId="ToggleSwitchAxis1" contentRefId="AxesContent" attribute="value" />
+	<Target xsi:type="expression" refId="ToggleSwAND" attribute="inA" />
+</Binding>
+			
+<Binding mode="oneWay">
+	<Source xsi:type="brease" widgetRefId="ToggleSwitchAxis2" contentRefId="AxesContent" attribute="value" />
+	<Target xsi:type="expression" refId="ToggleSwAND" attribute="inB" />
+</Binding>
+		
+<Binding mode="oneWay">
+	<Source xsi:type="expression" refId="ToggleSwAND" attribute="result" />
+	<Target xsi:type="brease" widgetRefId="NavigationButtonTwoAxes" contentRefId="AxesContent" attribute="enable" />
+</Binding>
+		
+
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:tab_idx" attribute="value" />
+<Target xsi:type="brease" contentRefId="HardwareContent" widgetRefId="TableItemNr" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:tab_symbol" attribute="value" />
+<Target xsi:type="brease" contentRefId="HardwareContent" widgetRefId="TableItemModel" attribute="stringValue" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:tab_description" attribute="value" />
+<Target xsi:type="brease" contentRefId="HardwareContent" widgetRefId="TableItemDesc" attribute="stringValue" />
+</Binding>
+
+<Binding mode="oneWay">
+<Source xsi:type="brease" contentRefId="HardwareContent" widgetRefId="TableHardware" attribute="selectedRow" />
+<Target xsi:type="brease" contentRefId="HardwareContent" widgetRefId="ImageListHardware" attribute="selectedIndex" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="brease" contentRefId="LEDContent" widgetRefId="ToggleSwitchColorMode" attribute="value" />
+<Target xsi:type="brease" contentRefId="LEDContent" widgetRefId="RadioButtonGroupLEDMode" attribute="enable" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ColorMode" attribute="value" />
+<Target xsi:type="brease" contentRefId="LEDContent" widgetRefId="LEDColorSelector6" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ColorMode" attribute="value" />
+<Target xsi:type="brease" contentRefId="LEDContent" widgetRefId="LEDColorSelector1" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ColorMode" attribute="value" />
+<Target xsi:type="brease" contentRefId="LEDContent" widgetRefId="LEDColorSelector3" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ColorMode" attribute="value" />
+<Target xsi:type="brease" contentRefId="LEDContent" widgetRefId="LEDColorSelector2" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ColorMode" attribute="value" />
+<Target xsi:type="brease" contentRefId="LEDContent" widgetRefId="LEDColorSelector5" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ColorMode" attribute="value" />
+<Target xsi:type="brease" contentRefId="LEDContent" widgetRefId="LEDColorSelector4" attribute="enable" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="ToggleSwitchSychMove" attribute="value" />
+<Target xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="SliderVelocity2ax" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="ToggleSwitchSychMove" attribute="value" />
+<Target xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="NumericInput2" attribute="enable" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:Axis2On" attribute="value" />
+<Target xsi:type="brease" contentRefId="HardwareContent" widgetRefId="BtnHardwareAxis2" attribute="enable" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:Axis1On" attribute="value" />
+<Target xsi:type="brease" contentRefId="HardwareContent" widgetRefId="BtnHardwareAxis1" attribute="enable" />
+</Binding>
+
+
+
+<Binding mode="oneWay">
+<Source xsi:type="brease" contentRefId="LEDContent" widgetRefId="RadioButtonGame" attribute="value" />
+<Target xsi:type="brease" contentRefId="LEDContent" widgetRefId="GroupBox1" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:Axis1On" attribute="value" />
+<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="ToggleSwitchAxis1" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:Axis2On" attribute="value" />
+<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="ToggleSwitchAxis2" attribute="value" />
+</Binding>
+
+</Bindings>
+</BindingsSet>

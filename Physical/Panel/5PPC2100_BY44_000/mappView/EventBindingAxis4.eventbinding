@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="EventBindingAxis4" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+    
+		<!--================================== AXIS 4 ========================================== -->	
+
+		<EventBinding>	<!--przycisk stop robi stop i wylacza move -->
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="Axis4Content" widgetRefId="ButtonStopAxis4" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="Axis4Content" widgetRefId="ToggleButtonMoveAxis4" >
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="0" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gDriveAxis4.Command.Stop" serverAlias="Alias1" >
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>		
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+
+
+		<EventBinding>	<!--przycisk homing  -->
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="Axis4Content" widgetRefId="ButtonHomingAxis4" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gDriveAxis4.Command.Home" serverAlias="Alias1">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+
+		<EventBinding>	<!--przycisk error reset  -->
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="Axis4Content" widgetRefId="ButtonErrorReset4" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gDriveAxis4.Command.ErrorReset" serverAlias="Alias1" >
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+
+		<EventBinding>   	<!-- obrazek  -->
+			<Source xsi:type="widgets.brease.ToggleButton.Event" contentRefId="Axis4Content" widgetRefId="ToggleButtonMoveAxis4" event="ValueChanged" />
+			<EventHandler condition="newValue">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:ImageRotateAxis4" >
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="NOT newValue">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:ImageRotateAxis4" >
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+					</Target>
+				</Action>	
+			</EventHandler>
+		</EventBinding>		
+
+	
+		<EventBinding>   	<!-- sterowanie sie wylacza gdy jest jog  -->
+			<Source xsi:type="widgets.brease.MomentaryPushButton.Event" contentRefId="Axis4Content" widgetRefId="BtnJogLeftAxis4" event="VisibleChanged" />
+			<EventHandler condition="newValue">
+				<Action>
+					<Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="Axis4Content" widgetRefId="GroupBoxSterowanie4" >
+						<Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="false" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="NOT newValue">
+				<Action>
+					<Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="Axis4Content" widgetRefId="GroupBoxSterowanie4" >
+						<Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="true" />
+					</Target>
+				</Action>	
+			</EventHandler>
+		</EventBinding>	
+		
+		<EventBinding>   	<!-- update predkosci   -->
+			<Source xsi:type="widgets.brease.NumericInput.Event" contentRefId="Axis4Content" widgetRefId="NumericInputVelocityAxis4" event="ValueChanged" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gDriveAxis4.Command.Update" >
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+		
+		
+	</Bindings>
+</EventBindingSet>

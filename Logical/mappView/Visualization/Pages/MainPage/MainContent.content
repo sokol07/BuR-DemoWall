@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="MainContent" height="700" width="1366" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavBtnPanelSim" top="239" left="479" width="200" height="123" zIndex="0" image="Media/Images/switch-off.png" imageAlign="bottom" pageId="PanelSimPage" text="PanelSim" imageHeight="70" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavBtnAxes" top="80" left="780" width="200" height="123" zIndex="1" image="Media/Images/motor.png" imageAlign="bottom" pageId="AxesPage" text="$IAT/AxesPage" imageHeight="70" imageWidth="0" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavBtnSettings" top="499" left="979" width="200" height="123" zIndex="2" image="Media/Images/settings.png" imageAlign="bottom" pageId="SettingsPage" text="$IAT/Settings" imageHeight="80" imageWidth="0" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavBtnAlarm" top="498" left="580" width="200" height="123" zIndex="3" image="Media/Images/hardware.png" imageAlign="bottom" pageId="HardwarePage" text="$IAT/Hardware" imageHeight="80" imageWidth="0" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavBtnLED" top="239" left="1080" width="200" height="123" zIndex="4" image="Media/Images/lampka_logo.png" imageAlign="bottom" pageId="LEDPage" text="LED" imageHeight="80" imageWidth="0" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.Image" id="Image1" top="300" left="760" width="240" height="142" zIndex="5" image="Media/Images/BuR1.png" />
+    <Widget xsi:type="widgets.brease.Image" id="Image2" top="40" left="40" width="580" height="120" zIndex="6" image="Media/Images/DemoWall.png" backColor="rgba(255, 255, 255, 0)" />
+
+  </Widgets>
+</Content>
