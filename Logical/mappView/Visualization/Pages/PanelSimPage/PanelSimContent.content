@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="PanelSimContent" height="700" width="1366" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputScreenTop" top="219" left="300" width="160" height="82" zIndex="0" maxValue="9.8" fontSize="25px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputScreenBottom" top="100" left="300" width="160" height="80" zIndex="1" maxValue="9.8" fontSize="25px" italic="false" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxSwitchStatus" top="360" left="79" width="540" height="240" zIndex="2" text="$IAT/SwitchesStatus" shadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)" enable="false">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButtonDI1" top="26" left="38" width="50" height="50" zIndex="0" text="DI1" cornerRadius="25px" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButtonDI2" top="25" left="178" width="50" height="50" zIndex="1" text="DI2" cornerRadius="25px" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButtonDI3" top="25" left="319" width="50" height="50" zIndex="2" text="DI3" cornerRadius="25px" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButtonDI4" top="26" left="439" width="50" height="50" zIndex="3" text="DI4" cornerRadius="25px" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButtonDI5" top="126" left="38" width="50" height="50" zIndex="4" text="DI5" cornerRadius="25px" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButtonDI6" top="125" left="178" width="50" height="50" zIndex="5" text="DI6" cornerRadius="25px" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButtonDI7" top="126" left="319" width="50" height="50" zIndex="6" text="DI7" cornerRadius="25px" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButtonDI8" top="126" left="439" width="50" height="50" zIndex="7" text="DI8" cornerRadius="25px" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxLEDCommands" top="80" left="620" width="640" height="240" zIndex="3" text="$IAT/LEDCommand" shadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitchDO1" top="26" left="38" width="82" height="33" zIndex="0" mouseDownText="DO1" text="DO1" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitchDO2" top="26" left="198" width="82" height="33" zIndex="1" mouseDownText="DO2" text="DO2" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitchDO3" top="26" left="357" width="83" height="33" zIndex="2" mouseDownText="DO3" text="DO3" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitchDO4" top="26" left="498" width="82" height="33" zIndex="3" mouseDownText="DO4" text="DO4" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitchDO5" top="124" left="37" width="83" height="33" zIndex="4" mouseDownText="DO5" text="DO5" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitchDO6" top="124" left="198" width="82" height="33" zIndex="5" mouseDownText="DO6" text="DO6" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitchDO7" top="124" left="357" width="83" height="33" zIndex="6" mouseDownText="DO7" text="DO7" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitchDO8" top="126" left="498" width="82" height="33" zIndex="7" mouseDownText="DO8" text="DO8" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputPotencjometrTop" top="380" left="760" width="100" height="100" zIndex="4" fontSize="25px" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputPotencjometrBottom" top="540" left="760" width="100" height="100" zIndex="5" fontSize="25px" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputEnkoder" top="420" left="1120" width="140" height="140" zIndex="6" cornerRadius="70px" textColor="rgba(0, 0, 0, 1)" fontSize="25px" />
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="340" left="710" width="182" height="30" zIndex="7" text="$IAT/TopPoten" textAlign="right" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label3" top="499" left="715" width="182" height="30" zIndex="8" text="$IAT/BottomPotem" textAlign="right" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label4" top="380" left="1130" width="102" height="30" zIndex="9" text="$IAT/Encoder" textAlign="right" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label5" top="119" left="79" width="182" height="30" zIndex="10" text="$IAT/ScreenTop" textAlign="right" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label6" top="239" left="80" width="182" height="30" zIndex="11" text="$IAT/ScreenBottom" textAlign="right" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="20" left="543" width="280" height="60" zIndex="12" text="Panel Sim" fontName="Courier New" fontSize="50px" bold="false" italic="false" />
+  </Widgets>
+</Content>

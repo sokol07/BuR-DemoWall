@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.6.57 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">circle.jpg</Object>
+    <Object Type="File">circleRot.jpg</Object>
+    <Object Type="File">images.jpg</Object>
+    <Object Type="File">axis_rotate.png</Object>
+    <Object Type="File">axis_rotate1.png</Object>
+    <Object Type="File">tlo.jpg</Object>
+    <Object Type="File">Home-512.png</Object>
+    <Object Type="File">back.png</Object>
+    <Object Type="File">settings.png</Object>
+    <Object Type="File">motor.png</Object>
+    <Object Type="File">warning2.png</Object>
+    <Object Type="File">switch-off.png</Object>
+    <Object Type="File">lampka_logo.png</Object>
+    <Object Type="File">BuR1.png</Object>
+    <Object Type="File">hardware.png</Object>
+    <Object Type="File">photo-1508614999368-9260051292e5.jpg</Object>
+    <Object Type="File">DemoWall.png</Object>
+    <Object Type="File">Hardware_button.png</Object>
+    <Object Type="File">Panel_sim.png</Object>
+    <Object Type="File">Axes Page.png</Object>
+    <Object Type="File">LED.png</Object>
+    <Object Type="File">Settingss.png</Object>
+    <Object Type="File">Hardware_napis.png</Object>
+    <Object Type="File">Panel2_ok.png</Object>
+    <Object Type="File">Two_Axes_napis.png</Object>
+    <Object Type="File">Axis1_napis.png</Object>
+    <Object Type="File">Axis2_napis.png</Object>
+  </Objects>
+</Package>
