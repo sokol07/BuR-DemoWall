@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<pdef:Page xmlns:pdef="http://www.br-automation.com/iat2015/pageDefinition/v2" id="SettingsPage" layoutRefId="MainLayout">
-  <Assignments>
-    <Assignment type="Content" baseContentRefId="SettingsContent" areaRefId="AreaMain" backGroundGradient="linear-gradient(to top , #ffffff 40%,#bdbdbd 100%)" />
-    <Assignment type="Content" baseContentRefId="BottomContent" areaRefId="AreaBottom" backColor="rgba(255, 165, 0, 1)" backGroundGradient="linear-gradient(to top, #ffa500 0%,#ffffff 100%)" />
-  </Assignments>
-</pdef:Page>
