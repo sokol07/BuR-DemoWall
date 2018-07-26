@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="BottomBackTwoAxesContent" height="68" width="1366" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButtonBackTwoAxes" top="0" left="500" width="62" height="62" zIndex="0" image="Media/Images/back.png" pageId="AxesPage" imageHeight="62" cornerRadius="31px" backColor="rgba(245, 245, 245, 1)" mouseDownBorderColor="rgba(255, 167, 38, 1)" mouseDownBorderWidth="3px" margin="4px" checkedBackColor="rgba(255, 165, 0, 1)" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavBtnHomeTwoAxes" top="0" left="680" width="62" height="62" zIndex="1" image="Media/Images/Home-512.png" pageId="MainPage" imageHeight="62" borderWidth="7px" cornerRadius="31px" backColor="rgba(245, 245, 245, 1)" borderColor="rgba(0, 0, 0, 1)" mouseDownBorderColor="rgba(255, 167, 38, 1)" mouseDownBorderWidth="3px" margin="4px" shadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)" checkedBackColor="rgba(255, 165, 0, 1)" />
+    <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput1" top="0" left="1040" width="320" height="60" zIndex="2" textColor="rgba(64, 64, 64, 1)" textAlign="right" bold="true" margin="4px" shadow="none" />
+  </Widgets>
+</Content>

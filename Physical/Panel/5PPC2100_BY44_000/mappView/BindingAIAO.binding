@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="BindingAIAO" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		
+		<!-- =======================X20IF1061============================== -->
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:IF1061.ModuleOK" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="ToggleBtnIF1061-1ModOK" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:IF1061.SerialNumber" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputIF1061-1Serial" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:IF1061.ModuleId" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputIF1061-1ModuId" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:IF1061.HardwareVariant" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputHardwareHardware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:IF1061.FirmwareVersion" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputIF1061-1Firmware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:IF1061.CommunicationState" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputIF1061-1ComunicationState" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:IF1061.CommunicationError" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputIF1061-1ComunicationError" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:IF1061.Version" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputIF1061-1Version" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:IF1061.ErrorCount" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputIF1061-1ErrorCount" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:IF1061.SlaveState" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputIF1061-1SlaveState" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:IF1061.ConfiguredSlaves" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputIF1061-1ConfiguresSlaves" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:IF1061.ActiveSlaves" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputIF1061-1ActiveSlaves" attribute="value" />
+		</Binding>
+		
+		<!--============================== X20BC1083 ==========================================-->
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BC1083.ModuleOK" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="ToggleBtnBC1083ModOK" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BC1083.SerialNumber" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputBC1083Serial" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BC1083.ModuleId" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputBC1083ModuleId" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BC1083.HardwareVariant" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputBC1083Hardware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BC1083.FirmwareVersion" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputBC1083Firmware" attribute="value" />
+		</Binding>
+		
+		<!--================================= X20PS9400 =====================================-->
+
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:PS9400.ModuleOK" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="ToggleBtnPS9400ModOK" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:PS9400.SerialNumber" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputPS9400Serial" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:PS9400.ModuleId" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputPS9400ModuleId" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:PS9400.HardwareVariant" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputPS9400Hardware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:PS9400.FirmwareVersion" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputPS9400Firmware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:PS9400.StatusInput1" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="ToggleBtnPS9400StatusInput1" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:PS9400.StatusInput2" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="ToggleBtnPS9400StatusInput2" attribute="value" />
+		</Binding>
+		
+		<!--================================ X20AI2632 ===========================-->
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:AI2632.ModuleOK" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="ToggleBtnAI2632ModOK" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:AI2632.StaleData" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="ToggleBtnAI2632StaleData" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:AI2632.SerialNumber" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputAI2632Serial" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:AI2632.ModuleId" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputAI2632ModuleId" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:AI2632.HardwareVariant" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputAI2632Hardware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:AI2632.FirmwareVersion" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputAI2632Firmware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:AI2632.ConvertionCycle" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputAI2632Conversion" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:AI2632.SyncStatus" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="ToggleBtnAI2632SyncStatus" attribute="value" />
+		</Binding>
+		
+		<!--<Binding mode="oneWay">
+		<Source xsi:type="opcUa" refId="::AnalogInp:gAnalogInput1.BaseValue" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="NumericOutputAI1" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+		<Source xsi:type="opcUa" refId="::AnalogInp:gAnalogInput2.BaseValue" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="NumericOutputAI2" attribute="value" />
+		</Binding>-->
+		
+		<!--=============================== X20AO2632 ==================================-->
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:AO2632.ModuleOK" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="ToggleBtnAO2632ModOK" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:AO2632.SerialNumber" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputAO2632Serial" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:AO2632.ModuleId" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputAO2632ModuleId" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:AO2632.HardwareVariant" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputAO2632Hardware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:AO2632.FirmwareVersion" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputAO2632Firmware" attribute="value" />
+		</Binding>
+		
+		<!--<Binding mode="oneWay">
+		<Source xsi:type="opcUa"  refId="::AsGlobalPV:gAnalogOutput1.ScaledValue" serverAlias = "Alias1"  attribute="value" />
+		<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="NumericOutputAI1" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">
+		<Source xsi:type="opcUa"  refId="::AsGlobalPV:gAnalogInput2.ScaledValue" serverAlias = "Alias1"  attribute="value" />
+		<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="NumericOutputAI2" attribute="value" />
+		</Binding>-->
+
+		<!--======================================== X20DC1392 ==========================-->
+				
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:DC1392.ModuleOK" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="ToggleBtnDC1396ModOK" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:DC1392.StaleData" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="ToggleBtnDC1396StaleData" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:DC1392.SerialNumber" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputDC1396Serial" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:DC1392.ModuleId" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputDC1396ModuleId" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:DC1392.HardwareVariant" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputDC1396Hardware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:DC1392.FirmwareVersion" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputDC1396Firmware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDigitalCounter1.BaseValue" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="NumericOutputDC" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:DC1396.DigitalInput1" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="ToggleBtnDC1396DigitalInput" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:DC1396.ReferenceModeEncoder1" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="TextOutputDC1396RefModeEncoder" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:DC1396.StatusInput1" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="NumericOutputDC1396Status" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:DC1396.PowerSupply1" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="AIAOContent" widgetRefId="ToggleBtnDC1396PowerSupply" attribute="value" />
+		</Binding>
+		
+	</Bindings>
+</BindingsSet>
+

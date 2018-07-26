@@ -1,0 +1,631 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT</prop>
+  </header>
+  <body>
+    <tu tuid="MoveMode">
+      <tuv xml:lang="pl">
+        <seg>Wybierz tryb ruchu:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Choose move mode:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Settings">
+      <tuv xml:lang="pl">
+        <seg>Ustawienia</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Settings</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Hardware">
+      <tuv xml:lang="pl">
+        <seg>Sprzęt</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Hardware</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AxesPage">
+      <tuv xml:lang="pl">
+        <seg>Osie</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Axes</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ScreenTop">
+      <tuv xml:lang="pl">
+        <seg>Górny wyświetlacz:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Top screen:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ScreenBottom">
+      <tuv xml:lang="pl">
+        <seg>Dolny wyświetlacz:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Bottom screen:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="TopPoten">
+      <tuv xml:lang="pl">
+        <seg>Potencjometr górny:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Top potentiometer:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="BottomPotem">
+      <tuv xml:lang="pl">
+        <seg>Potencjometr dolny:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Bottom potentiometer:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Encoder">
+      <tuv xml:lang="pl">
+        <seg>Enkoder:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Encoder:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SwitchesStatus">
+      <tuv xml:lang="pl">
+        <seg>Stan przełączników</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Switches status</seg>
+      </tuv>
+    </tu>
+    <tu tuid="LEDCommand">
+      <tuv xml:lang="pl">
+        <seg>Sterowanie diodami LED</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>LED commands</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Red">
+      <tuv xml:lang="pl">
+        <seg>Czerwony</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Red</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Green">
+      <tuv xml:lang="pl">
+        <seg>Zielony</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Green</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Yellow">
+      <tuv xml:lang="pl">
+        <seg>Żółty</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Yellow</seg>
+      </tuv>
+    </tu>
+    <tu tuid="User">
+      <tuv xml:lang="pl">
+        <seg>Użytkownik</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>User</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Login">
+      <tuv xml:lang="pl">
+        <seg>Zaloguj</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Login</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Logout">
+      <tuv xml:lang="pl">
+        <seg>Wyloguj</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Logout</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Password">
+      <tuv xml:lang="pl">
+        <seg>Hasło:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Password:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="LoginSuccessful">
+      <tuv xml:lang="pl">
+        <seg>Zalogowano</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Login Successful</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SetUserFailed">
+      <tuv xml:lang="pl">
+        <seg>Nie udało się zalogować</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Set User failed</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Axis1">
+      <tuv xml:lang="pl">
+        <seg>Oś 1</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Axis 1</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Axis2">
+      <tuv xml:lang="pl">
+        <seg>Oś 2</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Axis 2</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Axis3">
+      <tuv xml:lang="pl">
+        <seg>Oś 3</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Axis 3</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Axis4">
+      <tuv xml:lang="pl">
+        <seg>Oś 4</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Axis 4</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Axis5">
+      <tuv xml:lang="pl">
+        <seg>Oś 5</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Axis 5</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Axis6">
+      <tuv xml:lang="pl">
+        <seg>Oś 6</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Axis 6</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AutotuningAxis1">
+      <tuv xml:lang="pl">
+        <seg>Autostrojenie osi 1</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Autotuning axis 1</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AutotuningAxis2">
+      <tuv xml:lang="pl">
+        <seg>Autostrojenie osi 2</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Autotuning axis 2</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AutotuningAxis3">
+      <tuv xml:lang="pl">
+        <seg>Autostrojenie osi 3</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Autotuning axis 3</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AutotuningAxis4">
+      <tuv xml:lang="pl">
+        <seg>Autostrojenie osi 4</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Autotuning axis 4</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AutotuningAxis5">
+      <tuv xml:lang="pl">
+        <seg>Autostrojenie osi 5</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Autotuning axis 5</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AutotuningAxis6">
+      <tuv xml:lang="pl">
+        <seg>Autostrojenie osi 6</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Autotuning axis 6</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Autotuningdone">
+      <tuv xml:lang="pl">
+        <seg>Autostrojenie wykonane</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Autotuning done</seg>
+      </tuv>
+    </tu>
+    <tu tuid="TwoAxis">
+      <tuv xml:lang="pl">
+        <seg>Dwie osie (1 i 2)</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Two axis (1 and 2)</seg>
+      </tuv>
+    </tu>
+    <tu tuid="On">
+      <tuv xml:lang="pl">
+        <seg>Wł</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>On</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Off">
+      <tuv xml:lang="pl">
+        <seg>Wył</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Off</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PowerON">
+      <tuv xml:lang="pl">
+        <seg>Zasilanie Wł</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Power On</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PowerOff">
+      <tuv xml:lang="pl">
+        <seg>Zasilanie Wył</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Power Off</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Velocity">
+      <tuv xml:lang="pl">
+        <seg>Prędkość</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Velocity</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ManualMovement">
+      <tuv xml:lang="pl">
+        <seg>Tryb podążania</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Following movement</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ElectronicGear">
+      <tuv xml:lang="pl">
+        <seg>Przekładnia elektroniczna</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Electronic gear</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ContinuousMove">
+      <tuv xml:lang="pl">
+        <seg>Ruch ciągły</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Continuous movement</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AdditiveMove">
+      <tuv xml:lang="pl">
+        <seg>Ruch addytywny</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Additive movement</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AbsoluteMove">
+      <tuv xml:lang="pl">
+        <seg>Ruch absolutny</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Absolute movement</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Jog">
+      <tuv xml:lang="pl">
+        <seg>Ruch ręczny</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Manual movement</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Right">
+      <tuv xml:lang="pl">
+        <seg>Prawo</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Right</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Left">
+      <tuv xml:lang="pl">
+        <seg>Lewo</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Left</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Distance">
+      <tuv xml:lang="pl">
+        <seg>Dystans</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Distance</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Position">
+      <tuv xml:lang="pl">
+        <seg>Pozycja</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Position</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AxisHomedMovePerm">
+      <tuv xml:lang="pl">
+        <seg>Oś zbazowana, ruch dozwolony</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Axis is homed, move permitted</seg>
+      </tuv>
+    </tu>
+    <tu tuid="StartHoming">
+      <tuv xml:lang="pl">
+        <seg>Rozpocznij bazowanie</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Start homing</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Move">
+      <tuv xml:lang="pl">
+        <seg>Ruch</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Move</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Direction">
+      <tuv xml:lang="pl">
+        <seg>Kierunek</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Direction</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Inputs">
+      <tuv xml:lang="pl">
+        <seg>Wejścia</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Inputs</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Outputs">
+      <tuv xml:lang="pl">
+        <seg>Wyjścia</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Outputs</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Counter">
+      <tuv xml:lang="pl">
+        <seg>Licznik</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Counter </seg>
+      </tuv>
+    </tu>
+    <tu tuid="DO">
+      <tuv xml:lang="pl">
+        <seg>Wyjścia cyfrowe X20DO9322</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Digital outputs</seg>
+      </tuv>
+    </tu>
+    <tu tuid="DI">
+      <tuv xml:lang="pl">
+        <seg>Wejścia cyfrowe X20DO9371</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Digital inputs</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AO">
+      <tuv xml:lang="pl">
+        <seg>Wyjścia analogowe</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Analog outputs </seg>
+      </tuv>
+    </tu>
+    <tu tuid="AI">
+      <tuv xml:lang="pl">
+        <seg>Wejścia analogowe</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Analog inputs </seg>
+      </tuv>
+    </tu>
+    <tu tuid="DIDOmodule">
+      <tuv xml:lang="pl">
+        <seg>Moduł Wejść/Wyjśc cyfrowych</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Digital Inputs/Outputs module</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AIAOmodule">
+      <tuv xml:lang="pl">
+        <seg>Moduł Wejść/Wyjść analogowych</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Analog Inputs/Outputs module</seg>
+      </tuv>
+    </tu>
+    <tu tuid="DIDOprofibus">
+      <tuv xml:lang="pl">
+        <seg>Moduł Wejść/Wyjść cyfrowych (przez Profibus)</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Digital Inputs/Outputs modul (via Profibus)</seg>
+      </tuv>
+    </tu>
+    <tu tuid="TwoAxes">
+      <tuv xml:lang="pl">
+        <seg>Dwie osie</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Two axes</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserChangedTo">
+      <tuv xml:lang="pl">
+        <seg>Zmieniono użytkownika na:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>User changed to:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AuthorizationFailed">
+      <tuv xml:lang="pl">
+        <seg>Autoryzacja nie powiodła się</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Authorization failed</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Description">
+      <tuv xml:lang="pl">
+        <seg>Opis</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Description</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Languagechoose">
+      <tuv xml:lang="pl">
+        <seg>Wybierz język</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Choose language</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Units">
+      <tuv xml:lang="pl">
+        <seg>Wybierz jednostki</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Choose units</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ManualControlMode">
+      <tuv xml:lang="pl">
+        <seg>Ręczne ustawianie kolorów</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Manual control mode</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AutoControlMode">
+      <tuv xml:lang="pl">
+        <seg>Tryb automatyczny</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Auto color mode</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Snake">
+      <tuv xml:lang="pl">
+        <seg>Wąż</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Snake</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ErrorReset">
+      <tuv xml:lang="pl">
+        <seg>Kasowanie błędu</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Error reset</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Users">
+      <tuv xml:lang="pl">
+        <seg>Użytkownicy:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Users:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="GameOpis">
+      <tuv xml:lang="pl">
+        <seg>Naciskaj pojawiąjace się przyciski, najszybciej jak potrafisz.
+Twój wynik w milisekundach zostanie wyświetlony na ekranie.
+
+Naciśnij czerwony przycisk, aby rozpocząć grę.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Press appearing buttons as fast as you can.
+Your score in miliseconds will be displayed on the screen.
+
+Press red to start game.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Result">
+      <tuv xml:lang="pl">
+        <seg>Wynik:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Result:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="TuningInfo">
+      <tuv xml:lang="pl">
+        <seg>Zaloguj się, aby uruchomić autotuning!</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Log in to run autotuning!</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="DOProfibusContent" height="350" width="500" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxDOProfibus" top="20" left="180" width="160" height="310" zIndex="0" text="$IAT/DO" backColor="rgba(255, 255, 255, 1)" shadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)">
+
+      <Widgets>
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnDO1" top="22" left="24" width="30" height="30" zIndex="0" text="1" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnDO3" top="104" left="24" width="30" height="30" zIndex="1" text="3" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnDO2" top="61" left="24" width="30" height="30" zIndex="2" text="2" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnDO4" top="144" left="24" width="30" height="30" zIndex="3" text="4" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnDO5" top="184" left="24" width="30" height="30" zIndex="4" text="5" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnDO6" top="224" left="24" width="30" height="30" zIndex="5" text="6" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnDO7" top="22" left="104" width="30" height="30" zIndex="6" text="7" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnDO8" top="62" left="104" width="30" height="30" zIndex="7" text="8" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnDO9" top="103" left="104" width="30" height="30" zIndex="8" text="9" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnDO10" top="143" left="100" width="40" height="30" zIndex="9" text="10" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnDO12" top="224" left="100" width="40" height="30" zIndex="10" text="12" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnDO11" top="184" left="100" width="40" height="30" zIndex="11" text="11" cornerRadius="25px" enable="false" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

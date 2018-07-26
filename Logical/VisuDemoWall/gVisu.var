@@ -1,0 +1,22 @@
+VAR
+	SynchroVelocity : REAL;
+	tab_description : ARRAY[0..25] OF STRING[100] := ['X20 CPU x86 400MHz, 3x I/O, POWERLINK, 1x IF, CAN','12 Outputs 24 VDC / 0.5A, Source','X20 Digital 12xl, 24V, Sink, 1 Wire','X20 Bus tramsmitter, IO supply 24 VDC, X67 supply','X20 Interface PROFIBUS DP Master (DTM)','X20 Bus Controller POWERLINK, 2x IF','24VDC power supply module for BC, internal IO supply and bus','2 Analog Inputs +-10 V / 0 to 20 mA  16 bit','2 Analog Outputs +-10 V / 0 to 20 mA','Digital Counter, 1x ABR, 24V, 100 kHz','X20 Safe Digital In, 20xl, 24V','X20 Safe Digital 2xl 24V, 2xO Relay','X20 Analog 3xl 480VAC, 4xl 20mA','8Port industrial hub','PROFIBUS DP Controller, X2X, RS485','X67 Bus Controller POWERLINK, 8xDI/DO 0.5A','X67 Safe Digital In, 8xl, 24V','X20 SafeLOGIC, POWERLINK V2, SafeMC','Distributed I/O','IO Simulation Panel','Synchronous motor','Stepper motor','ACOPOS P3 servo drive, 1 digital multi-standard encoder interface per axis, 1 axis','ACOPOS P3 servo drive, 1 digital multi-standard encoder interface per axis, 3 axis','ACOPOSmicro Servo, 2x8A, 2x EnDat','ACOPOSmicro stepper, 2x 10A, X2X, 2x ABR'];
+	tab_symbol : ARRAY[0..25] OF STRING[30] := ['X20CP1382','X20DO9322','X20DI9371','X20BT9400','X20IF1061-1','X20BC1083','X20PS9400','X20AI2632','X20AO2632','X20DC1396','X20SI9100','X20SC2432','X20AP3111','0AC808.9','X20BC0063','X67BC8321-1','X67SI8103','X20SL8010','4XP0000.00-K21','4SIM.00-01','8LVA22B1030D000-0','80MPD5.300S014-01','8EIx2HWT10.0700-1','8EI2x2MWSS0.0600-1','80VD100PD.C000-01','80SD100XD.C044-01'];
+	tab_idx : ARRAY[0..25] OF USINT := [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,0];
+	ColorMode : BOOL := TRUE;
+	RotateValueAxis1 : BOOL;
+	RotateValueAxis2 : BOOL;
+	RotateValueAxis3 : BOOL;
+	RotateValueAxis4 : BOOL;
+	RotateValueAxis5 : BOOL;
+	RotateValueAxis6 : BOOL;
+	ImageRotateAxis1 : BOOL;
+	ImageRotateAxis2 : BOOL;
+	ImageRotateAxis3 : BOOL;
+	ImageRotateAxis4 : BOOL;
+	ImageRotateAxis5 : BOOL;
+	ImageRotateAxis6 : BOOL;
+	ElectronicGearMode : USINT;
+	Axis1On : BOOL := FALSE;
+	Axis2On : BOOL := FALSE;
+END_VAR

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="MasterSafetyContent" height="700" width="500" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="20" left="60" width="379" height="640" zIndex="0" text="X20SL8010">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Label6" top="2" left="20" width="80" height="30" zIndex="0" text="Serial nr:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label7" top="29" left="20" width="120" height="30" zIndex="1" text="Module ID:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label8" top="62" left="20" width="100" height="30" zIndex="2" multiLine="true" text="Hardware variant:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label9" top="89" left="20" width="100" height="56" zIndex="3" multiLine="true" text="Firmware version:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputX20SL8010Serial" top="3" left="200" width="120" height="30" zIndex="4" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputX20SL8010ModuleId" top="29" left="200" width="120" height="30" zIndex="5" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputX20SL8010Hardware" top="64" left="200" width="120" height="30" zIndex="6" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputX20SL8010Firmware" top="101" left="200" width="120" height="30" zIndex="7" />
+        <Widget xsi:type="widgets.brease.Label" id="Label10" top="144" left="20" width="80" height="30" zIndex="8" text="NET time:" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputX20SL8010NETTime" top="144" left="200" width="120" height="30" zIndex="9" />
+        <Widget xsi:type="widgets.brease.Label" id="Label1" top="183" left="20" width="80" height="30" zIndex="10" text="udit_low:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label2" top="223" left="20" width="80" height="30" zIndex="11" text="udit_high:" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputX20SL8010UditLow" top="183" left="200" width="120" height="30" zIndex="12" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputX20SL8010UditHigh" top="223" left="200" width="120" height="30" zIndex="13" />
+        <Widget xsi:type="widgets.brease.Label" id="Label16" top="272" left="10" width="145" height="30" zIndex="14" text="Safe digital inputs:" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX20SL8010DI001" top="300" left="3" width="57" height="30" zIndex="15" text="001" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX20SL8010DI005" top="381" left="3" width="57" height="30" zIndex="16" text="005" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX20SL8010DI003" top="341" left="3" width="57" height="30" zIndex="17" text="003" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX20SL8010DI007" top="421" left="3" width="57" height="30" zIndex="18" text="007" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX20SL8010DI002" top="302" left="100" width="60" height="30" zIndex="19" text="002" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX20SL8010DI004" top="342" left="100" width="60" height="30" zIndex="20" text="004" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX20SL8010DI006" top="383" left="100" width="60" height="30" zIndex="21" text="006" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX20SL8010DI008" top="423" left="100" width="60" height="30" zIndex="22" text="008" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.Label" id="Label17" top="276" left="207" width="145" height="30" zIndex="23" text="Safe digital outputs:" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX20SL8010DO101" top="304" left="200" width="57" height="30" zIndex="24" text="101" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX20SL8010DO105" top="385" left="200" width="57" height="30" zIndex="25" text="105" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX20SL8010DO103" top="345" left="200" width="57" height="30" zIndex="26" text="103" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX20SL8010DO107" top="425" left="200" width="57" height="30" zIndex="27" text="107" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX20SL8010DO102" top="306" left="297" width="60" height="30" zIndex="28" text="102" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX20SL8010DO104" top="346" left="297" width="60" height="30" zIndex="29" text="104" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX20SL8010DO106" top="387" left="297" width="60" height="30" zIndex="30" text="106" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX20SL8010DO108" top="427" left="297" width="60" height="30" zIndex="31" text="108" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.Label" id="Label22" top="524" left="140" width="110" height="30" zIndex="32" text="Module OK:" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX20SL8010ModOK" top="564" left="168" width="40" height="30" zIndex="33" cornerRadius="25px" enable="false" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

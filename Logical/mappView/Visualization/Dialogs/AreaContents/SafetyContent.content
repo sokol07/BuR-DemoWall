@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="SafetyContent" height="650" width="1350" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="20" left="40" width="380" height="600" zIndex="0" text="SI9100" shadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Line" id="Line1" zIndex="0" x1="190" x2="190" y1="3" y2="566" />
+        <Widget xsi:type="widgets.brease.Label" id="Label6" top="2" left="0" width="80" height="30" zIndex="1" text="Serial nr:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label7" top="43" left="0" width="120" height="30" zIndex="2" text="Module ID:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label8" top="84" left="0" width="100" height="30" zIndex="3" multiLine="true" text="Hardware variant:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label9" top="124" left="0" width="100" height="56" zIndex="4" multiLine="true" text="Firmware version:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputSI9100Serial" top="3" left="78" width="120" height="30" zIndex="5" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputSI9100ModuleId" top="43" left="78" width="120" height="30" zIndex="6" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputSI9100Hardware" top="83" left="78" width="120" height="30" zIndex="7" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputSI9100Firmware" top="143" left="78" width="120" height="30" zIndex="8" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSI9100" top="222" left="20" width="40" height="30" zIndex="9" text="1" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSI9100DI5" top="302" left="20" width="40" height="30" zIndex="10" text="5" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSI9100DI3" top="262" left="20" width="40" height="30" zIndex="11" text="3" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSI9100DI7" top="343" left="20" width="40" height="30" zIndex="12" text="7" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSI9100DI9" top="382" left="20" width="40" height="30" zIndex="13" text="9" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSI9100DI11" top="422" left="20" width="40" height="30" zIndex="14" text="11" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSI9100DI2" top="223" left="118" width="40" height="30" zIndex="15" text="2" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSI9100DI4" top="263" left="118" width="40" height="30" zIndex="16" text="4" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSI9100DI6" top="304" left="118" width="40" height="30" zIndex="17" text="6" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSI9100DI8" top="344" left="118" width="40" height="30" zIndex="18" text="8" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSI9100DI12" top="425" left="118" width="40" height="30" zIndex="19" text="12" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnDO10ToggleBtnSI9100DI10" top="385" left="118" width="40" height="30" zIndex="20" text="10" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.Label" id="Label14" top="191" left="20" width="135" height="30" zIndex="21" text="Safe digital inputs:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label16" top="483" left="40" width="110" height="30" zIndex="22" text="Module OK:" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSI9100ModOK" top="523" left="66" width="40" height="30" zIndex="23" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSI9100DI13" top="22" left="220" width="40" height="30" zIndex="24" text="13" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSI9100DI17" top="142" left="220" width="40" height="30" zIndex="25" text="17" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSI9100DI15" top="82" left="220" width="40" height="30" zIndex="26" text="15" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSI9100DI19" top="202" left="220" width="40" height="30" zIndex="27" text="19" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSI9100DI14" top="22" left="320" width="40" height="30" zIndex="28" text="14" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSI9100DI16" top="82" left="320" width="40" height="30" zIndex="29" text="16" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSI9100DI18" top="142" left="320" width="40" height="30" zIndex="30" text="18" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSI9100DI20" top="202" left="320" width="40" height="30" zIndex="31" text="20" cornerRadius="25px" enable="false" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox2" top="20" left="479" width="380" height="600" zIndex="1" text="SC2432" shadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Line" id="Line2" zIndex="0" x1="190" x2="190" y1="3" y2="566" />
+        <Widget xsi:type="widgets.brease.Label" id="Label10" top="2" left="0" width="80" height="30" zIndex="1" text="Serial nr:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label11" top="44" left="0" width="120" height="30" zIndex="2" text="Module ID:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label12" top="85" left="0" width="100" height="30" zIndex="3" multiLine="true" text="Hardware variant:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label13" top="125" left="0" width="100" height="56" zIndex="4" multiLine="true" text="Firmware version:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputSC2432Serial" top="3" left="78" width="120" height="30" zIndex="5" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputSC2432ModuleId" top="43" left="78" width="120" height="30" zIndex="6" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputSC2432Hardware" top="83" left="78" width="120" height="30" zIndex="7" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputSC2432Firmware" top="143" left="78" width="120" height="30" zIndex="8" />
+        <Widget xsi:type="widgets.brease.Label" id="Label15" top="191" left="20" width="135" height="30" zIndex="9" text="Safe digital inputs:" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSC2432DI1" top="223" left="20" width="40" height="30" zIndex="10" text="1" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSC2432DI2" top="224" left="117" width="40" height="30" zIndex="11" text="2" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.Label" id="Label17" top="263" left="5" width="180" height="30" zIndex="12" text="Safe equivalent inputs:" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSC2432EQIN" top="303" left="70" width="40" height="30" zIndex="13" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.Label" id="Label18" top="335" left="10" width="180" height="30" zIndex="14" text="Safe antivalent inputs:" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSC1" top="370" left="70" width="40" height="30" zIndex="15" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.Label" id="Label19" top="410" left="20" width="160" height="30" zIndex="16" text="Safe digital outputs:" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSC2432DO1" top="450" left="22" width="40" height="30" zIndex="17" text="1" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSC2432DO2" top="450" left="119" width="40" height="30" zIndex="18" text="2" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.Label" id="Label20" top="483" left="40" width="110" height="30" zIndex="19" text="Module OK:" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSI1" top="523" left="70" width="40" height="30" zIndex="20" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.Label" id="Label21" top="2" left="215" width="160" height="30" zIndex="21" text="Safe digital output:" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSC2432DO0102" top="43" left="260" width="60" height="37" zIndex="22" text="1" cornerRadius="25px" enable="false" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox3" top="20" left="919" width="380" height="600" zIndex="2" text="AP3111" shadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Line" id="Line3" zIndex="0" x1="190" x2="190" y1="3" y2="566" />
+        <Widget xsi:type="widgets.brease.Label" id="Label22" top="483" left="48" width="110" height="30" zIndex="1" text="Module OK:" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnSI2" top="523" left="78" width="40" height="30" zIndex="2" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.Label" id="Label23" top="3" left="0" width="80" height="30" zIndex="3" text="Serial nr:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label24" top="45" left="0" width="120" height="30" zIndex="4" text="Module ID:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label25" top="86" left="0" width="100" height="30" zIndex="5" multiLine="true" text="Hardware variant:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label26" top="125" left="0" width="100" height="56" zIndex="6" multiLine="true" text="Firmware version:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputAP3111Serial" top="3" left="77" width="120" height="30" zIndex="7" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputAP3111ModuleId" top="44" left="77" width="120" height="30" zIndex="8" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputAP3111Hardware" top="84" left="77" width="120" height="30" zIndex="9" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputAP3111Firmware" top="144" left="77" width="120" height="30" zIndex="10" />
+        <Widget xsi:type="widgets.brease.Label" id="Label5" top="183" left="0" width="85" height="30" zIndex="11" text="Stale data:" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnAP3111StaleData" top="184" left="117" width="40" height="30" zIndex="12" cornerRadius="25px" enable="false" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

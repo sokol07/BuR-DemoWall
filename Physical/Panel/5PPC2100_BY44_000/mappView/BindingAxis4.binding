@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="BindingAxis4" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		
+
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:RotateValueAxis4" attribute="value" />
+			<Target xsi:type="brease" contentRefId="Axis4Content" widgetRefId="ImageListAxis4" attribute="selectedIndex" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="brease" contentRefId="Axis4Content" widgetRefId="RadioButtonJogAxis4" attribute="value" />
+			<Target xsi:type="brease" contentRefId="Axis4Content" widgetRefId="BtnJogLeftAxis4" attribute="visible" />
+		</Binding>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="brease" contentRefId="Axis4Content" widgetRefId="RadioButtonJogAxis4" attribute="value" />
+			<Target xsi:type="brease" contentRefId="Axis4Content" widgetRefId="BtnJogRightAxis4" attribute="visible" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="brease" contentRefId="Axis4Content" widgetRefId="RadioButtonAdditiveAxis4" attribute="value" />
+			<Target xsi:type="brease" contentRefId="Axis4Content" widgetRefId="Label5Axis4" attribute="visible" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="brease" contentRefId="Axis4Content" widgetRefId="RadioButtonAbsoluteAxis4" attribute="value" />
+			<Target xsi:type="brease" contentRefId="Axis4Content" widgetRefId="RadialSliderAxis4" attribute="visible" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="brease" contentRefId="Axis4Content" widgetRefId="RadioButtonAbsoluteAxis4" attribute="value" />
+			<Target xsi:type="brease" contentRefId="Axis4Content" widgetRefId="NumericInputPositionAxis4" attribute="visible" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="brease" contentRefId="Axis4Content" widgetRefId="RadioButtonAbsoluteAxis4" attribute="value" />
+			<Target xsi:type="brease" contentRefId="Axis4Content" widgetRefId="Label6Axis4" attribute="visible" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="brease" contentRefId="Axis4Content" widgetRefId="RadioButtonAdditiveAxis4" attribute="value" />
+			<Target xsi:type="brease" contentRefId="Axis4Content" widgetRefId="NumericInputDistanceAxis4" attribute="visible" />
+		</Binding>
+	
+		
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="brease" widgetRefId="RadioButtonContinousAxis4" contentRefId="Axis4Content" attribute="value" />
+			<Target xsi:type="expression" refId="ORaxis4" attribute="inA" />
+		</Binding>
+	
+		<Binding mode="oneWay">
+			<Source xsi:type="brease" widgetRefId="RadioButtonAdditiveAxis4" contentRefId="Axis4Content" attribute="value" />
+			<Target xsi:type="expression" refId="ORaxis4" attribute="inB" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="ORaxis4" attribute="result" />
+			<Target xsi:type="brease" widgetRefId="GroupBoxDirection4" contentRefId="Axis4Content" attribute="visible" />
+		</Binding>	
+		
+		<Binding mode="oneWay">   <!-- widocznosc przycisk move  -->
+			<Source xsi:type="brease" widgetRefId="LabelHomedAxis4" contentRefId="Axis4Content" attribute="visible" />
+			<Target xsi:type="expression" refId="ANDPNaxis4" attribute="inA" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="brease" widgetRefId="RadioButtonJogAxis4" contentRefId="Axis4Content" attribute="value" />
+			<Target xsi:type="expression" refId="ANDPNaxis4" attribute="inB" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="ANDPNaxis4" attribute="result" />
+			<Target xsi:type="brease" widgetRefId="ToggleButtonMoveAxis4" contentRefId="Axis4Content" attribute="visible" />
+		</Binding>
+		
+		
+			
+
+		<!--================================================== OPCUA AXIS 4 PAGE ======================================================== -->		
+		<Binding mode="twoWay">  <!-- wybor trybu -->
+			<Source xsi:type="brease" contentRefId="Axis4Content" widgetRefId="RadioButtonGroupAxis4" attribute="selectedIndex" />
+			<Target xsi:type="opcUa" refId="::AsGlobalPV:gDriveAxis4.Command.MoveMode" serverAlias="Alias1" attribute="value" />
+		</Binding>				
+
+		<Binding mode="twoWay">  <!-- predkosc -->
+			<Source xsi:type="brease" contentRefId="Axis4Content" widgetRefId="NumericInputVelocityAxis4" attribute="value" />
+			<Target xsi:type="opcUa" refId="::AsGlobalPV:gDriveAxis4.Command.SetVelocity" serverAlias="Alias1" attribute="value" />
+		</Binding>		
+
+		
+
+		<Binding mode="twoWay">   <!-- dystans -->
+			<Source xsi:type="brease" contentRefId="Axis4Content" widgetRefId="NumericInputDistanceAxis4" attribute="value" />
+			<Target xsi:type="opcUa" refId="::AsGlobalPV:gDriveAxis4.Command.SetDistance" serverAlias="Alias1" attribute="value" />
+		</Binding>
+
+		<Binding mode="twoWay">  <!-- pozycja numerin in -->
+			<Source xsi:type="brease" contentRefId="Axis4Content" widgetRefId="NumericInputPositionAxis4" attribute="value" />
+			<Target xsi:type="opcUa" refId="::AsGlobalPV:gDriveAxis4.Command.SetPosition" serverAlias="Alias1" attribute="value" />
+		</Binding>	
+
+		<Binding mode="twoWay">   <!-- pozycja slider -->
+			<Source xsi:type="brease" contentRefId="Axis4Content" widgetRefId="RadialSliderAxis4" attribute="value" />
+			<Target xsi:type="brease" contentRefId="Axis4Content" widgetRefId="NumericInputPositionAxis4" attribute="value" />
+		</Binding>	
+		
+		<Binding mode="twoWay">   <!-- kierunek -->
+			<Source xsi:type="brease" contentRefId="Axis4Content" widgetRefId="ToggleSwitchDirectionAxis4" attribute="value" />
+			<Target xsi:type="opcUa" refId="::AsGlobalPV:gDriveAxis4.Command.SetDirection" serverAlias="Alias1" attribute="value" />
+		</Binding>					
+
+		<Binding mode="oneWay">  <!-- is homed label -->
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDriveAxis4.Status.Homed" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="Axis4Content" widgetRefId="LabelHomedAxis4" attribute="visible" />
+		</Binding>		
+
+		<Binding mode="twoWay">   <!-- przycisk move -->
+			<Source xsi:type="brease" contentRefId="Axis4Content" widgetRefId="ToggleButtonMoveAxis4" attribute="value" />
+			<Target xsi:type="opcUa" refId="::AsGlobalPV:gDriveAxis4.Command.Start" serverAlias="Alias1" attribute="value" />
+		</Binding>			
+	
+		<Binding mode="twoWay">   <!-- przycisk jog left -->
+			<Source xsi:type="brease" contentRefId="Axis4Content" widgetRefId="BtnJogLeftAxis4" attribute="value" />
+			<Target xsi:type="opcUa" refId="::AsGlobalPV:gDriveAxis4.Command.JogLeft" serverAlias="Alias1" attribute="value" />
+		</Binding>		
+
+		<Binding mode="twoWay">   <!-- przycisk jog right -->
+			<Source xsi:type="brease" contentRefId="Axis4Content" widgetRefId="BtnJogRightAxis4" attribute="value" />
+			<Target xsi:type="opcUa" refId="::AsGlobalPV:gDriveAxis4.Command.JogRight" serverAlias="Alias1" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">  <!-- error status label -->
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDriveAxis4.Status.Error" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="Axis4Content" widgetRefId="ErrorLabel4" attribute="visible" />
+		</Binding>		
+
+		<Binding mode="oneWay">  <!-- chart  -->
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDriveAxis4.Status.Velocity" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="Axis4Content" widgetRefId="OnlineChartGraphAxis4" attribute="value" />
+		</Binding>
+				
+	</Bindings>
+</BindingsSet>
