@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<pdef:Page xmlns:pdef="http://www.br-automation.com/iat2015/pageDefinition/v2" id="AxesPage" layoutRefId="MainLayout">
-  <Assignments>
-    <Assignment type="Content" baseContentRefId="AxesContent" areaRefId="AreaMain" />
-
-    <Assignment type="Content" baseContentRefId="BottomContent" areaRefId="AreaBottom" backColor="rgba(255, 165, 0, 1)" backGroundGradient="linear-gradient(to top, #ffa500 0%,#ffffff 100%)" />
-
-  </Assignments>
-</pdef:Page>
