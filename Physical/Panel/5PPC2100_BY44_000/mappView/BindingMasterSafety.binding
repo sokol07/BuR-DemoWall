@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="BindingMasterSafety" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SL8010.ModuleOk" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MasterSafetyContent" widgetRefId="ToggleBtnX20SL8010ModOK" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SL8010.SerialNumber" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MasterSafetyContent" widgetRefId="TextOutputX20SL8010Serial" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SL8010.ModuleId" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MasterSafetyContent" widgetRefId="TextOutputX20SL8010ModuleId" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SL8010.HardwareVariant" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MasterSafetyContent" widgetRefId="TextOutputX20SL8010Hardware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SL8010.FirmwareVersion" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MasterSafetyContent" widgetRefId="TextOutputX20SL8010Firmware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SL8010.NetTime" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MasterSafetyContent" widgetRefId="TextOutputX20SL8010NETTime" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SL8010.UDID_low" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MasterSafetyContent" widgetRefId="TextOutputX20SL8010UditLow" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SL8010.UDID_high" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MasterSafetyContent" widgetRefId="TextOutputX20SL8010UditHigh" attribute="value" />
+		</Binding>
+		
+
+		
+	</Bindings>
+</BindingsSet>
+

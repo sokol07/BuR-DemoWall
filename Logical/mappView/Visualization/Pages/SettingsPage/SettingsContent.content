@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="SettingsContent" height="700" width="1366" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Login" id="Login1" top="119" left="119" width="300" height="160" zIndex="0" autFailMessage="$IAT/AuthorizationFailed" buttonLabel="$IAT/Login" passwordLabel="$IAT/Password" setUserFailMessage="$IAT/SetUserFailed" setUserSuccessMessage="$IAT/LoginSuccessful" userChangedMessage="$IAT/UserChangedTo" userLabel="$IAT/User" />
+    <Widget xsi:type="widgets.brease.MeasurementSystemSelector" id="MeasurementSystemSelector1" top="380" left="315" width="100" height="30" zIndex="1" />
+    <Widget xsi:type="widgets.brease.LanguageSelector" id="LanguageSelector1" top="320" left="315" width="100" height="30" zIndex="2" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="20" left="545" width="303" height="60" zIndex="3" text="$IAT/Settings" fontName="Courier New" fontSize="50px" />
+    <Widget xsi:type="widgets.brease.LogoutButton" id="LogoutButton" top="205" left="450" width="120" height="30" zIndex="4" text="$IAT/Logout" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelChooseLanguage" top="320" left="120" width="140" height="30" zIndex="5" text="$IAT/Languagechoose" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelChooseUnits" top="380" left="120" width="140" height="30" zIndex="6" text="$IAT/Units" />
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="100" left="1000" width="120" height="30" zIndex="7" text="$IAT/Users" textAlign="right" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label3" top="160" left="1020" width="100" height="30" zIndex="8" text="Marcin" textAlign="right" />
+    <Widget xsi:type="widgets.brease.Label" id="Label4" top="100" left="1160" width="120" height="30" zIndex="9" text="$IAT/Password" textAlign="left" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label5" top="160" left="1160" width="100" height="30" zIndex="10" text="Marcin" textAlign="left" />
+    <Widget xsi:type="widgets.brease.Label" id="Label6" top="200" left="1050" width="70" height="30" zIndex="11" text="a" textAlign="right" />
+    <Widget xsi:type="widgets.brease.Label" id="Label7" top="200" left="1160" width="80" height="30" zIndex="12" text="a" textAlign="left" />
+    <Widget xsi:type="widgets.brease.Line" id="Line1" zIndex="13" x1="1140" x2="1140" y1="100" y2="280" />
+    <Widget xsi:type="widgets.brease.Line" id="Line2" zIndex="14" x1="1260" x2="1040" y1="140" y2="140" />
+  </Widgets>
+</Content>

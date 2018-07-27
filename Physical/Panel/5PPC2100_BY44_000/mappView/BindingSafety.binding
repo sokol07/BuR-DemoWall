@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="BindingSafety" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		<!--================================== X20SI9100 ==================================-->
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI9100.ModuleOk" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSI9100ModOK" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI9100.SerialNumber" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="TextOutputSI9100Serial" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI9100.ModuleId" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="TextOutputSI9100ModuleId" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI9100.HardwareVariant" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="TextOutputSI9100Hardware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI9100.FirmwareVersion" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="TextOutputSI9100Firmware" attribute="value" />
+		</Binding>
+	
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI9100.SafeDigitalInput1" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSI9100" attribute="value" />
+		</Binding>	
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI9100.SafeDigitalInput2" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSI9100DI2" attribute="value" />
+		</Binding>	
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI9100.SafeDigitalInput3" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSI9100DI3" attribute="value" />
+		</Binding>	
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI9100.SafeDigitalInput4" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSI9100DI4" attribute="value" />
+		</Binding>	
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI9100.SafeDigitalInput5" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSI9100DI5" attribute="value" />
+		</Binding>	
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI9100.SafeDigitalInput6" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSI9100DI6" attribute="value" />
+		</Binding>	
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI9100.SafeDigitalInput7" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSI9100DI7" attribute="value" />
+		</Binding>	
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI9100.SafeDigitalInput8" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSI9100DI8" attribute="value" />
+		</Binding>	
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI9100.SafeDigitalInput9" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSI9100DI9" attribute="value" />
+		</Binding>	
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI9100.SafeDigitalInput10" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnDO10ToggleBtnSI9100DI10" attribute="value" />
+		</Binding>	
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI9100.SafeDigitalInput11" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSI9100DI11" attribute="value" />
+		</Binding>	
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI9100.SafeDigitalInput12" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSI9100DI12" attribute="value" />
+		</Binding>	
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI9100.SafeDigitalInput13" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSI9100DI13" attribute="value" />
+		</Binding>	
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI9100.SafeDigitalInput14" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSI9100DI14" attribute="value" />
+		</Binding>	
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI9100.SafeDigitalInput15" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSI9100DI15" attribute="value" />
+		</Binding>	
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI9100.SafeDigitalInput16" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSI9100DI16" attribute="value" />
+		</Binding>	
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI9100.SafeDigitalInput17" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSI9100DI17" attribute="value" />
+		</Binding>	
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI9100.SafeDigitalInput18" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSI9100DI18" attribute="value" />
+		</Binding>	
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI9100.SafeDigitalInput19" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSI9100DI19" attribute="value" />
+		</Binding>	
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI9100.SafeDigitalInput20" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSI9100DI20" attribute="value" />
+		</Binding>	
+		
+		<!--=========================================== X20SC2432 ===============================-->
+			
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SC2432.ModuleOk" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSI1" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SC2432.SerialNumber" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="TextOutputSC2432Serial" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SC2432.ModuleId" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="TextOutputSC2432ModuleId" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SC2432.HardwareVariant" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="TextOutputSC2432Hardware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SC2432.FirmwareVersion" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="TextOutputSC2432Firmware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SC2432.SafeDigitalInput1" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSC2432DI1" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SC2432.SafeDigitalInput2" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSC2432DI2" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SC2432.SafeDigitalOutput1" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSC2432DO1" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SC2432.SafeDigitalOutput2" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSC2432DO2" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SC2432.SafeDigitalOutput0102" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSC2432DO0102" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SC2432.SafeEquivalentInput0102" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSC2432EQIN" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SC2432.SafeAntivalentInput0102" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSC1" attribute="value" />
+		</Binding>
+		
+		<!--============================= X20AP3111 ===========================-->
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" serverAlias="Alias1" refId="::AsGlobalPV:AP3111.ModuleOk" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnSI2" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" serverAlias="Alias1" refId="::AsGlobalPV:AP3111.StaleData" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnAP3111StaleData" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" serverAlias="Alias1" refId="::AsGlobalPV:AP3111.SerialNumber" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="TextOutputAP3111Serial" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" serverAlias="Alias1" refId="::AsGlobalPV:AP3111.ModuleId" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="TextOutputAP3111ModuleId" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" serverAlias="Alias1" refId="::AsGlobalPV:AP3111.HardwareVariant" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="TextOutputAP3111Hardware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" serverAlias="Alias1" refId="::AsGlobalPV:AP3111.FirmwareVersion" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="TextOutputAP3111Firmware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" serverAlias="Alias1" refId="::AsGlobalPV:AP3111.UrmsA" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="TextOutputAP311Voltage" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" serverAlias="Alias1" refId="::AsGlobalPV:AP3111.WarningPhaseA" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnWarningPA" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" serverAlias="Alias1" refId="::AsGlobalPV:AP3111.LossPhaseA" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SafetyContent" widgetRefId="ToggleBtnLossPA" attribute="value" />
+		</Binding>
+		
+	</Bindings>
+</BindingsSet>
+

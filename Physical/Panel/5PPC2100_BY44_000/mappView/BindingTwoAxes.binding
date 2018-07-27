@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="BindingTwoAxes" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+		
+	<!--================================================== TWO AXES PAGE ======================================================== -->
+
+	<Binding mode="oneWay">  <!-- predkosc axis1 -->
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:gDriveAxisAcoposMicroStepper.Status.Velocity" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="NumericOutputAx1" attribute="value" />
+	</Binding>		
+
+	<Binding mode="oneWay">  <!-- predkosc axis2 -->
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:gDriveAxisAcoposMicroServo.Status.Velocity" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="NumericOutputAx2" attribute="value" />
+	</Binding>	
+		
+	<Binding mode="twoWay">  <!-- predkosc sychro -->
+		<Source xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="NumericInput2" attribute="value" />
+		<Target xsi:type="opcUa" refId="::AsGlobalPV:gDriveSynchro.SynchroVelocity" serverAlias="Alias1" attribute="value" />
+	</Binding>		
+
+					
+	<Binding mode="oneWay">  <!-- synchro on switch -->
+		<Source xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="ToggleSwitchPower2ax" attribute="value" />
+		<Target xsi:type="opcUa" refId="::AsGlobalPV:gDriveSynchro.SynchroOn" serverAlias="Alias1" attribute="value" />
+	</Binding>	
+	
+	<Binding mode="twoWay">  <!-- gear ratio -->
+		<Source xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="RadioButtonGruopGear1" attribute="selectedIndex" />
+		<Target xsi:type="opcUa" refId="::AsGlobalPV:gDriveSynchro.GearRatio" serverAlias="Alias1" attribute="value" />
+	</Binding>	
+		
+	<Binding mode="oneWay">  <!-- movement mode switch -->
+		<Source xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="ToggleSwitchSychMove" attribute="value" />
+		<Target xsi:type="opcUa" refId="::AsGlobalPV:gDriveSynchro.ManualMovement" serverAlias="Alias1" attribute="value" />
+	</Binding>
+		
+	<Binding mode="oneWay">  <!-- error status label 1 -->
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:gDriveAxisAcoposMicroStepper.Status.Error" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="LabelErrorAx1" attribute="visible" />
+	</Binding>
+		
+	<Binding mode="oneWay">  <!-- error status label 2 -->
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:gDriveAxisAcoposMicroServo.Status.Error" serverAlias="Alias1" attribute="value" />	
+		<Target xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="LabelErrorAx2" attribute="visible" />
+	</Binding>
+		
+	<Binding mode="oneWay">  <!-- coupling error status label -->
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:gDriveSynchro.ErrorStatus" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="LabelCouplingError" attribute="visible" />
+	</Binding>	
+		
+		<Binding mode="oneWay">  <!-- coupling error reset info -->
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDriveSynchro.ErrorStatus" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="TwoAxesContent" widgetRefId="LabelCouplingReset" attribute="visible" />
+		</Binding>	
+		
+			
+  </Bindings>
+</BindingsSet>

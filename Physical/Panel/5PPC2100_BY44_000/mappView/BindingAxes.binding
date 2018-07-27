@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="BindingAxes" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+		
+	<!--================================================== AXES PAGE ======================================================== -->		
+
+	<Binding mode="twoWay">
+		<Source xsi:type="brease" contentRefId="AxesContent" widgetRefId="ToggleSwitchAxis1" attribute="value" />
+		<Target xsi:type="opcUa"  refId="::AsGlobalPV:gDriveAxisAcoposMicroStepper.Command.PowerOn" serverAlias="Alias1" attribute="value" />
+	</Binding>		
+			
+	<Binding mode="twoWay">
+		<Source xsi:type="brease" contentRefId="AxesContent" widgetRefId="ToggleSwitchAxis2" attribute="value" />
+		<Target xsi:type="opcUa"  refId="::AsGlobalPV:gDriveAxisAcoposMicroServo.Command.PowerOn" serverAlias="Alias1" attribute="value" />
+	</Binding>
+	
+	<Binding mode="twoWay">
+		<Source xsi:type="brease" contentRefId="AxesContent" widgetRefId="ToggleSwitchAxis3" attribute="value" />
+		<Target xsi:type="opcUa"  refId="::AsGlobalPV:gDriveAxis3.Command.PowerOn" serverAlias="Alias1" attribute="value" />
+	</Binding>
+
+	<Binding mode="twoWay">
+		<Source xsi:type="brease" contentRefId="AxesContent" widgetRefId="ToggleSwitchAxis4" attribute="value" />
+		<Target xsi:type="opcUa"  refId="::AsGlobalPV:gDriveAxis4.Command.PowerOn" serverAlias="Alias1" attribute="value" />
+	</Binding>
+
+	<Binding mode="twoWay">
+		<Source xsi:type="brease" contentRefId="AxesContent" widgetRefId="ToggleSwitchAxis5" attribute="value" />
+		<Target xsi:type="opcUa"  refId="::AsGlobalPV:gDriveAxis5.Command.PowerOn" serverAlias="Alias1" attribute="value" />
+	</Binding>
+
+	<Binding mode="twoWay">
+		<Source xsi:type="brease" contentRefId="AxesContent" widgetRefId="ToggleSwitchAxis6" attribute="value" />
+		<Target xsi:type="opcUa"  refId="::AsGlobalPV:gDriveAxis6.Command.PowerOn" serverAlias="Alias1" attribute="value" />
+	</Binding>		
+
+	<Binding mode="oneWay">  <!-- axis 2 tuned label -->
+		<Source xsi:type="opcUa"  refId="::AsGlobalPV:gDriveAxisAcoposMicroServo.Status.Tuned" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="LabelTuning2" attribute="visible" />
+	</Binding>
+	
+	<Binding mode="oneWay">  <!-- axis 3 tuned label -->
+		<Source xsi:type="opcUa"  refId="::AsGlobalPV:gDriveAxis3.Status.Tuned" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="LabelTuning3" attribute="visible" />
+	</Binding>
+
+	<Binding mode="oneWay">  <!-- axis 4 tuned label -->
+		<Source xsi:type="opcUa"  refId="::AsGlobalPV:gDriveAxis4.Status.Tuned" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="LabelTuning4" attribute="visible" />
+	</Binding>
+
+	<Binding mode="oneWay">  <!-- axis 5 tuned label -->
+		<Source xsi:type="opcUa"  refId="::AsGlobalPV:gDriveAxis5.Status.Tuned" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="LabelTuning5" attribute="visible" />
+	</Binding>
+
+	<Binding mode="oneWay">  <!-- axis 6 tuned label -->
+		<Source xsi:type="opcUa"  refId="::AsGlobalPV:gDriveAxis6.Status.Tuned" serverAlias="Alias1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="LabelTuning6" attribute="visible" />
+	</Binding>
+	
+<Binding mode="oneWay">  <!-- error status label 1 -->
+	<Source xsi:type="opcUa" refId="::AsGlobalPV:gDriveAxisAcoposMicroStepper.Status.Error" serverAlias="Alias1" attribute="value" />
+	<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="LabelErrorA1" attribute="visible" />
+</Binding>		
+
+<Binding mode="oneWay">  <!-- error status label 2 -->
+	<Source xsi:type="opcUa" refId="::AsGlobalPV:gDriveAxisAcoposMicroServo.Status.Error" serverAlias="Alias1" attribute="value" />
+	<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="LabelErrorA2" attribute="visible" />
+</Binding>	
+
+<Binding mode="oneWay">  <!-- error status label 3 -->
+	<Source xsi:type="opcUa" refId="::AsGlobalPV:gDriveAxis3.Status.Error" serverAlias="Alias1" attribute="value" />
+	<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="LabelErrorA3" attribute="visible" />
+</Binding>	
+
+<Binding mode="oneWay">  <!-- error status label 4 -->
+	<Source xsi:type="opcUa" refId="::AsGlobalPV:gDriveAxis4.Status.Error" serverAlias="Alias1" attribute="value" />
+	<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="LabelErrorA4" attribute="visible" />
+</Binding>
+
+<Binding mode="oneWay">  <!-- error status label 5 -->
+	<Source xsi:type="opcUa" refId="::AsGlobalPV:gDriveAxis5.Status.Error" serverAlias="Alias1" attribute="value" />
+	<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="LabelErrorA5" attribute="visible" />
+</Binding>
+
+<Binding mode="oneWay">  <!-- error status label 6 -->
+	<Source xsi:type="opcUa" refId="::AsGlobalPV:gDriveAxis6.Status.Error" serverAlias="Alias1" attribute="value" />
+	<Target xsi:type="brease" contentRefId="AxesContent" widgetRefId="LabelErrorA6" attribute="visible" />
+</Binding>
+		
+  </Bindings>
+</BindingsSet>

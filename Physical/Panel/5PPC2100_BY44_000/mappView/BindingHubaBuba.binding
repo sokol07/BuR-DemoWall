@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="BindingHubaBuba" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		
+		<!--=============================== X67BC8321-1 =========================-->
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BC8321.ModuleOk" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaGrayContent" widgetRefId="ToggleBtnX67BC8321-1ModOK" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BC8321.SerialNumber" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaGrayContent" widgetRefId="TextOutputX67BC8321-1Serial" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BC8321.ModuleId" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaGrayContent" widgetRefId="TextOutputX67BC8321-1ModuleId" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BC8321.HardwareVariant" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaGrayContent" widgetRefId="TextOutputX67BC8321-1Hardware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BC8321.FirmwareVersion" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaGrayContent" widgetRefId="TextOutputX67BC8321-1Firmware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BC8321.NetTime" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaGrayContent" widgetRefId="TextOutputX67BC8321-1NETTime" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BC8321.IF1_ST1.ModuleOk" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaGrayContent" widgetRefId="ToggleBtnX67BC8321-1IF1ModOK" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BC8321.IF1_ST1.SerialNumber" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaGrayContent" widgetRefId="TextOutputX67BC8321-1IF1Serial" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BC8321.IF1_ST1.ModuleId" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaGrayContent" widgetRefId="TextOutputX67BC8321-1IF1ModuleId" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BC8321.IF1_ST1.HardwareVariant" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaGrayContent" widgetRefId="TextOutputX67BC8321-1IF1Hardware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BC8321.IF1_ST1.FirmwareVersion" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaGrayContent" widgetRefId="TextOutputX67BC8321-1IF1Firmware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::DigitalOup:DigitalOutput5.Commands.On" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaGrayContent" widgetRefId="ToggleBtnX67BC8321-1DI1" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BC8321.IF1_ST1.DigitalInOut2" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaGrayContent" widgetRefId="ToggleBtnX67BC8321-1DI2" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::DigitalOup:DigitalOutput6.Commands.On" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaGrayContent" widgetRefId="ToggleBtnX67BC8321-1DI3" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BC8321.IF1_ST1.DigitalInOut4" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaGrayContent" widgetRefId="ToggleBtnX67BC8321-1DI4" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BC8321.IF1_ST1.DigitalInOut5" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaGrayContent" widgetRefId="ToggleBtnX67BC8321-1DI5" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::DigitalOup:DigitalOutput7.Commands.On" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaGrayContent" widgetRefId="ToggleBtnX67BC8321-1DI6" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:BC8321.IF1_ST1.DigitalInOut7" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaGrayContent" widgetRefId="ToggleBtnX67BC8321-1DI7" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::DigitalOup:DigitalOutput8.Commands.On" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaGrayContent" widgetRefId="ToggleBtnX67BC8321-1DI8" attribute="value" />
+		</Binding>
+		
+		<!--================================= X67SI8103 ======================================-->
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI8103.ModuleOk" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaYellowContent" widgetRefId="ToggleBtnX67SI8103ModOK" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI8103.SerialNumber" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaYellowContent" widgetRefId="TextOutputX67SI8103Serial" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI8103.ModuleId" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaYellowContent" widgetRefId="TextOutputX67SI8103ModuleId" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI8103.HardwareVariant" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaYellowContent" widgetRefId="TextOutputX67SI8103Hardware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI8103.FirmwareVersion" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaYellowContent" widgetRefId="TextOutputX67SI8103Firmware" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI8103.SafeDigitalInput1" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaYellowContent" widgetRefId="ToggleBtnX67SI8103DI1" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI8103.SafeDigitalInput2" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaYellowContent" widgetRefId="ToggleBtnX67SI8103DI2" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI8103.SafeDigitalInput3" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaYellowContent" widgetRefId="ToggleBtnX67SI8103DI3" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI8103.SafeDigitalInput4" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaYellowContent" widgetRefId="ToggleBtnX67SI8103DI4" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI8103.SafeDigitalInput5" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaYellowContent" widgetRefId="ToggleBtnX67SI8103DI5" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI8103.SafeDigitalInput6" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaYellowContent" widgetRefId="ToggleBtnX67SI8103DI6" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI8103.SafeDigitalInput7" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaYellowContent" widgetRefId="ToggleBtnX67SI8103DI7" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI8103.SafeDigitalInput8" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaYellowContent" widgetRefId="ToggleBtnX67SI8103DI8" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI8103.SafeTwoChannelInput0102" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaYellowContent" widgetRefId="ToggleBtnX67si8103TwoChInput0102" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI8103.SafeTwoChannelInput0304" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaYellowContent" widgetRefId="ToggleBtnX67si8103TwoChInput0304" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI8103.SafeTwoChannelInput0506" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaYellowContent" widgetRefId="ToggleBtnX67si8103TwoChInput0506" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI8103.SafeTwoChannelInput0708" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaYellowContent" widgetRefId="ToggleBtnX67si8103TwoChInput0708" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI8103.DigitalInput1" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaYellowContent" widgetRefId="ToggleBtnX67SI8103SafeI1" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI8103.DigitalInput2" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaYellowContent" widgetRefId="ToggleBtnX67SI8103SafeI2" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI8103.DigitalOutput1" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaYellowContent" widgetRefId="ToggleBtnDigitalOutput1" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI8103.DigitalOutput2" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaYellowContent" widgetRefId="ToggleBtnDigitalOutput2" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI8103.PhysicalStateOutput1" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaYellowContent" widgetRefId="ToggleBtnPhysical1" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SI8103.PhysicalStateOutput2" serverAlias="Alias1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="HubaBubaYellowContent" widgetRefId="ToggleBtnPhysical2" attribute="value" />
+		</Binding>
+		
+	</Bindings>
+</BindingsSet>
+

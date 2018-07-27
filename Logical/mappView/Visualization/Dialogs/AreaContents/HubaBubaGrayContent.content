@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="HubaBubaGrayContent" height="650" width="400" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="5" left="20" width="360" height="640" zIndex="0" text="X67BC8321-1" shadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Label6" top="3" left="0" width="80" height="30" zIndex="0" text="Serial nr:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label7" top="43" left="0" width="120" height="30" zIndex="1" text="Module ID:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label8" top="83" left="0" width="100" height="30" zIndex="2" multiLine="true" text="Hardware variant:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label9" top="115" left="0" width="100" height="56" zIndex="3" multiLine="true" text="Firmware version:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputX67BC8321-1Serial" top="3" left="120" width="120" height="30" zIndex="4" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputX67BC8321-1ModuleId" top="43" left="120" width="120" height="30" zIndex="5" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputX67BC8321-1Hardware" top="83" left="120" width="120" height="30" zIndex="6" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputX67BC8321-1Firmware" top="125" left="120" width="120" height="30" zIndex="7" />
+        <Widget xsi:type="widgets.brease.Label" id="Label10" top="165" left="0" width="80" height="30" zIndex="8" text="NET time:" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputX67BC8321-1NETTime" top="165" left="120" width="120" height="30" zIndex="9" />
+        <Widget xsi:type="widgets.brease.Label" id="Label11" top="528" left="200" width="150" height="36" zIndex="10" text="IF1.ST1.Module OK" />
+        <Widget xsi:type="widgets.brease.Label" id="Label13" top="343" left="20" width="180" height="36" zIndex="11" text="IF1.ST1.Digital outputs:" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX67BC8321-1IF1ModOK" top="563" left="260" width="40" height="30" zIndex="12" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX67BC8321-1DI1" top="370" left="32" width="40" height="30" zIndex="13" text="1" cornerRadius="25px" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX67BC8321-1DI5" top="450" left="32" width="40" height="30" zIndex="14" text="5" cornerRadius="25px" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX67BC8321-1DI3" top="410" left="32" width="40" height="30" zIndex="15" text="3" cornerRadius="25px" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX67BC8321-1DI7" top="491" left="32" width="40" height="30" zIndex="16" text="7" cornerRadius="25px" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX67BC8321-1DI2" top="371" left="130" width="40" height="30" zIndex="17" text="2" cornerRadius="25px" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX67BC8321-1DI4" top="411" left="130" width="40" height="30" zIndex="18" text="4" cornerRadius="25px" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX67BC8321-1DI6" top="452" left="130" width="40" height="30" zIndex="19" text="6" cornerRadius="25px" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX67BC8321-1DI8" top="492" left="130" width="40" height="30" zIndex="20" text="8" cornerRadius="25px" />
+        <Widget xsi:type="widgets.brease.Label" id="Label16" top="528" left="55" width="110" height="30" zIndex="21" text="Module OK:" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX67BC8321-1ModOK" top="563" left="80" width="40" height="30" zIndex="22" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.Label" id="Label12" top="403" left="200" width="140" height="37" zIndex="23" multiLine="true" text="IF1.ST1.Serial nr:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputX67BC8321-1IF1Serial" top="443" left="220" width="120" height="30" zIndex="24" />
+        <Widget xsi:type="widgets.brease.Label" id="Label14" top="463" left="200" width="140" height="37" zIndex="25" text="IF1.ST1.ModuleID:" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputX67BC8321-1IF1ModuleId" top="503" left="220" width="120" height="30" zIndex="26" multiLine="true" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label15" top="303" left="200" width="145" height="38" zIndex="27" breakWord="true" multiLine="true" text="IF1.ST1.HardwareVariant:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputX67BC8321-1IF1Hardware" top="363" left="220" width="120" height="30" zIndex="28" />
+        <Widget xsi:type="widgets.brease.Label" id="Label17" top="224" left="200" width="145" height="38" zIndex="29" breakWord="true" multiLine="true" text="IF1.ST1.FirmwareVersion:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputX67BC8321-1IF1Firmware" top="264" left="200" width="120" height="30" zIndex="30" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

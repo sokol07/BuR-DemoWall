@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="BindingOPCUA" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+
+<!--=============================================== PANEL SIM ======================================================== -->
+			
+
+			<!--  =========== screens on panel ============ -->			
+<Binding mode="twoWay">
+	<Source xsi:type="brease" contentRefId="PanelSimContent" widgetRefId="NumericInputScreenTop" attribute="value" />
+	<Target xsi:type="opcUa"  refId="::AsGlobalPV:gAnalogOutput1.BaseValue" serverAlias="Alias1" attribute="value" />
+</Binding>	
+		
+<Binding mode="twoWay">
+	<Source xsi:type="brease" contentRefId="PanelSimContent" widgetRefId="NumericInputScreenBottom" attribute="value" />
+	<Target xsi:type="opcUa"  refId="::AsGlobalPV:gAnalogOutput2.BaseValue" serverAlias="Alias1" attribute="value" />
+</Binding>		
+		
+		
+
+			<!--================  potentiometers on panel================= -->	
+<Binding mode="oneWay">
+	<Source xsi:type="opcUa"  refId="::AsGlobalPV:gAnalogInput1.ScaledValue" serverAlias="Alias1" attribute="value" />
+	<Target xsi:type="brease" contentRefId="PanelSimContent" widgetRefId="NumericOutputPotencjometrTop" attribute="value" />
+</Binding>		
+		
+<Binding mode="oneWay">
+	<Source xsi:type="opcUa"  refId="::AsGlobalPV:gAnalogInput2.ScaledValue" serverAlias="Alias1" attribute="value" />
+	<Target xsi:type="brease" contentRefId="PanelSimContent" widgetRefId="NumericOutputPotencjometrBottom" attribute="value" />
+</Binding>
+
+			<!-- =============== encoder on panel  ====================-->	
+<Binding mode="oneWay">
+	<Source xsi:type="opcUa"  refId="::AsGlobalPV:gDigitalCounter1.ScaledValue" serverAlias="Alias1" attribute="value" />
+	<Target xsi:type="brease" contentRefId="PanelSimContent" widgetRefId="NumericOutputEnkoder" attribute="value" />
+</Binding>			
+		
+			<!--============= switches status on panel  ================-->
+<Binding mode="oneWay">
+	<Source xsi:type="opcUa"  refId="::DigitalInp:DigitalInput1.Status" serverAlias="Alias1" attribute="value" />
+	<Target xsi:type="brease" contentRefId="PanelSimContent" widgetRefId="ToggleButtonDI1" attribute="value" />
+</Binding>		
+		
+<Binding mode="oneWay">
+	<Source xsi:type="opcUa"  refId="::DigitalInp:DigitalInput2.Status" serverAlias="Alias1" attribute="value" />
+	<Target xsi:type="brease" contentRefId="PanelSimContent" widgetRefId="ToggleButtonDI2" attribute="value" />
+</Binding>
+
+<Binding mode="oneWay">
+	<Source xsi:type="opcUa"  refId="::DigitalInp:DigitalInput3.Status" serverAlias="Alias1" attribute="value" />
+	<Target xsi:type="brease" contentRefId="PanelSimContent" widgetRefId="ToggleButtonDI3" attribute="value" />
+</Binding>
+
+<Binding mode="oneWay">
+	<Source xsi:type="opcUa"  refId="::DigitalInp:DigitalInput4.Status" serverAlias="Alias1" attribute="value" />
+	<Target xsi:type="brease" contentRefId="PanelSimContent" widgetRefId="ToggleButtonDI4" attribute="value" />
+</Binding>
+		
+<Binding mode="oneWay">
+	<Source xsi:type="opcUa"  refId="::DigitalInp:DigitalInput5.Status" serverAlias="Alias1" attribute="value" />
+	<Target xsi:type="brease" contentRefId="PanelSimContent" widgetRefId="ToggleButtonDI5" attribute="value" />
+</Binding>
+		
+<Binding mode="oneWay">
+	<Source xsi:type="opcUa"  refId="::DigitalInp:DigitalInput6.Status" serverAlias="Alias1" attribute="value" />
+	<Target xsi:type="brease" contentRefId="PanelSimContent" widgetRefId="ToggleButtonDI6" attribute="value" />
+</Binding>
+		
+<Binding mode="oneWay">
+	<Source xsi:type="opcUa"  refId="::DigitalInp:DigitalInput7.Status" serverAlias="Alias1" attribute="value" />
+	<Target xsi:type="brease" contentRefId="PanelSimContent" widgetRefId="ToggleButtonDI7" attribute="value" />
+</Binding>
+		
+<Binding mode="oneWay">
+	<Source xsi:type="opcUa"  refId="::DigitalInp:DigitalInput8.Status" serverAlias="Alias1" attribute="value" />
+	<Target xsi:type="brease" contentRefId="PanelSimContent" widgetRefId="ToggleButtonDI8" attribute="value" />
+</Binding>
+		
+
+			<!--===================  value of LEDs on panel =================== -->
+<Binding mode="twoWay">
+	<Source xsi:type="brease" contentRefId="PanelSimContent" widgetRefId="ToggleSwitchDO1" attribute="value" />
+	<Target xsi:type="opcUa"  refId="::DigitalOup:DigitalOutput1.Commands.On" serverAlias="Alias1" attribute="value" />
+</Binding>	
+		
+<Binding mode="twoWay">
+	<Source xsi:type="brease" contentRefId="PanelSimContent" widgetRefId="ToggleSwitchDO2" attribute="value" />
+	<Target xsi:type="opcUa"  refId="::DigitalOup:DigitalOutput2.Commands.On" serverAlias="Alias1" attribute="value" />
+</Binding>
+		
+<Binding mode="twoWay">
+	<Source xsi:type="brease" contentRefId="PanelSimContent" widgetRefId="ToggleSwitchDO3" attribute="value" />
+	<Target xsi:type="opcUa"  refId="::DigitalOup:DigitalOutput3.Commands.On" serverAlias="Alias1" attribute="value" />
+</Binding>
+		
+<Binding mode="twoWay">
+	<Source xsi:type="brease" contentRefId="PanelSimContent" widgetRefId="ToggleSwitchDO4" attribute="value" />
+	<Target xsi:type="opcUa"  refId="::DigitalOup:DigitalOutput4.Commands.On" serverAlias="Alias1" attribute="value" />
+</Binding>
+		
+<Binding mode="twoWay">
+	<Source xsi:type="brease" contentRefId="PanelSimContent" widgetRefId="ToggleSwitchDO5" attribute="value" />
+	<Target xsi:type="opcUa"  refId="::DigitalOup:DigitalOutput5.Commands.On" serverAlias="Alias1" attribute="value" />
+</Binding>
+		
+<Binding mode="twoWay">
+	<Source xsi:type="brease" contentRefId="PanelSimContent" widgetRefId="ToggleSwitchDO6" attribute="value" />
+	<Target xsi:type="opcUa"  refId="::DigitalOup:DigitalOutput6.Commands.On" serverAlias="Alias1" attribute="value" />
+</Binding>
+		
+<Binding mode="twoWay">
+	<Source xsi:type="brease" contentRefId="PanelSimContent" widgetRefId="ToggleSwitchDO7" attribute="value" />
+	<Target xsi:type="opcUa"  refId="::DigitalOup:DigitalOutput7.Commands.On" serverAlias="Alias1" attribute="value" />
+</Binding>
+		
+<Binding mode="twoWay">
+	<Source xsi:type="brease" contentRefId="PanelSimContent" widgetRefId="ToggleSwitchDO8" attribute="value" />
+	<Target xsi:type="opcUa"  refId="::DigitalOup:DigitalOutput8.Commands.On" serverAlias="Alias1" attribute="value" />
+</Binding>
+
+		
+
+					
+<!-- ================================================= LEDs ============================================================-->
+
+						<!-- =============== LED1 ===================-->
+<Binding mode="oneWay">
+	<Source xsi:type="brease" contentRefId="LEDContent" widgetRefId="CheckBoxRedLED1" attribute="value" />
+	<Target xsi:type="opcUa" refId="::AsGlobalPV:Led1Command.Red" attribute="value" serverAlias = "Alias1"/>
+</Binding>
+
+<Binding mode="oneWay">
+	<Source xsi:type="brease" contentRefId="LEDContent" widgetRefId="CheckBoxYellowLED1" attribute="value" />
+	<Target xsi:type="opcUa" refId="::AsGlobalPV:Led1Command.Yellow" attribute="value" serverAlias = "Alias1"/>
+</Binding>	
+
+<Binding mode="oneWay">
+	<Source xsi:type="brease" contentRefId="LEDContent" widgetRefId="CheckBoxGreenLED1" attribute="value" />
+	<Target xsi:type="opcUa" refId="::AsGlobalPV:Led1Command.Green" attribute="value" serverAlias = "Alias1"/>
+</Binding>
+
+<Binding mode="oneWay">
+	<Source xsi:type="opcUa"  refId="::AsGlobalPV:Led1Status.IsRunning" serverAlias = "Alias1"  attribute="value" />
+	<Target xsi:type="brease" contentRefId="LEDContent" widgetRefId="LEDButton1" attribute="value" />
+</Binding>	
+
+						<!--======== ====== LED2  ===========-->
+<Binding mode="oneWay">
+	<Source xsi:type="brease" contentRefId="LEDContent" widgetRefId="CheckBoxRedLED2" attribute="value" />
+	<Target xsi:type="opcUa" refId="::AsGlobalPV:Led2Command.Red" attribute="value" serverAlias = "Alias1"/>
+</Binding>
+
+<Binding mode="oneWay">
+	<Source xsi:type="brease" contentRefId="LEDContent" widgetRefId="CheckBoxYellowLED2" attribute="value" />
+	<Target xsi:type="opcUa" refId="::AsGlobalPV:Led2Command.Yellow" attribute="value" serverAlias = "Alias1"/>
+</Binding>	
+
+<Binding mode="oneWay">
+	<Source xsi:type="brease" contentRefId="LEDContent" widgetRefId="CheckBoxGreenLED2" attribute="value" />
+	<Target xsi:type="opcUa" refId="::AsGlobalPV:Led2Command.Green" attribute="value" serverAlias = "Alias1"/>
+</Binding>
+
+<Binding mode="oneWay">
+	<Source xsi:type="opcUa"  refId="::AsGlobalPV:Led2Status.IsRunning" serverAlias = "Alias1"  attribute="value" />
+	<Target xsi:type="brease" contentRefId="LEDContent" widgetRefId="LEDButton2" attribute="value" />
+</Binding>
+
+
+						<!--================== LED3  =============-->
+<Binding mode="oneWay">
+	<Source xsi:type="brease" contentRefId="LEDContent" widgetRefId="CheckBoxRedLED3" attribute="value" />
+	<Target xsi:type="opcUa" refId="::AsGlobalPV:Led3Command.Red" attribute="value" serverAlias = "Alias1"/>
+</Binding>
+
+<Binding mode="oneWay">
+	<Source xsi:type="brease" contentRefId="LEDContent" widgetRefId="CheckBoxYellowLED3" attribute="value" />
+	<Target xsi:type="opcUa" refId="::AsGlobalPV:Led3Command.Yellow" attribute="value" serverAlias = "Alias1"/>
+</Binding>	
+
+<Binding mode="oneWay">
+	<Source xsi:type="brease" contentRefId="LEDContent" widgetRefId="CheckBoxGreenLED3" attribute="value" />
+	<Target xsi:type="opcUa" refId="::AsGlobalPV:Led3Command.Green" attribute="value" serverAlias = "Alias1"/>
+</Binding>
+
+<Binding mode="oneWay">
+	<Source xsi:type="opcUa"  refId="::AsGlobalPV:Led3Status.IsRunning" serverAlias = "Alias1"  attribute="value" />
+	<Target xsi:type="brease" contentRefId="LEDContent" widgetRefId="LEDButton3" attribute="value" />
+</Binding>
+
+					<!--=================== LED4  ======================-->
+<Binding mode="oneWay">
+	<Source xsi:type="brease" contentRefId="LEDContent" widgetRefId="CheckBoxRedLED4" attribute="value" />
+	<Target xsi:type="opcUa" refId="::AsGlobalPV:Led4Command.Red" attribute="value" serverAlias = "Alias1"/>
+</Binding>
+
+<Binding mode="oneWay">
+	<Source xsi:type="brease" contentRefId="LEDContent" widgetRefId="CheckBoxYellowLED4" attribute="value" />
+	<Target xsi:type="opcUa" refId="::AsGlobalPV:Led4Command.Yellow" attribute="value" serverAlias = "Alias1"/>
+</Binding>	
+
+<Binding mode="oneWay">
+	<Source xsi:type="brease" contentRefId="LEDContent" widgetRefId="CheckBoxGreenLED4" attribute="value" />
+	<Target xsi:type="opcUa" refId="::AsGlobalPV:Led4Command.Green" attribute="value" serverAlias = "Alias1"/>
+</Binding>
+
+<Binding mode="oneWay">
+	<Source xsi:type="opcUa"  refId="::AsGlobalPV:Led4Status.IsRunning" serverAlias = "Alias1"  attribute="value" />
+	<Target xsi:type="brease" contentRefId="LEDContent" widgetRefId="LEDButton4" attribute="value" />
+</Binding>	
+
+
+					<!--==================== LED5  ========================-->
+<Binding mode="oneWay">
+	<Source xsi:type="brease" contentRefId="LEDContent" widgetRefId="CheckBoxRedLED5" attribute="value" />
+	<Target xsi:type="opcUa" refId="::AsGlobalPV:Led5Command.Red" attribute="value" serverAlias = "Alias1"/>
+</Binding>
+
+<Binding mode="oneWay">
+	<Source xsi:type="brease" contentRefId="LEDContent" widgetRefId="CheckBoxYellowLED5" attribute="value" />
+	<Target xsi:type="opcUa" refId="::AsGlobalPV:Led5Command.Yellow" attribute="value" serverAlias = "Alias1"/>
+</Binding>	
+
+<Binding mode="oneWay">
+	<Source xsi:type="brease" contentRefId="LEDContent" widgetRefId="CheckBoxGreenLED5" attribute="value" />
+	<Target xsi:type="opcUa" refId="::AsGlobalPV:Led5Command.Green" attribute="value" serverAlias = "Alias1"/>
+</Binding>
+
+<Binding mode="oneWay">
+	<Source xsi:type="opcUa"  refId="::AsGlobalPV:Led5Status.IsRunning" serverAlias = "Alias1"  attribute="value" />
+	<Target xsi:type="brease" contentRefId="LEDContent" widgetRefId="LEDButton5" attribute="value" />
+</Binding>
+		
+
+					<!--====================== LED6  =================-->
+<Binding mode="oneWay">
+	<Source xsi:type="brease" contentRefId="LEDContent" widgetRefId="CheckBoxRedLED6" attribute="value" />
+	<Target xsi:type="opcUa" refId="::AsGlobalPV:Led6Command.Red" attribute="value" serverAlias = "Alias1"/>
+</Binding>
+
+<Binding mode="oneWay">
+	<Source xsi:type="brease" contentRefId="LEDContent" widgetRefId="CheckBoxYellowLED6" attribute="value" />
+	<Target xsi:type="opcUa" refId="::AsGlobalPV:Led6Command.Yellow" attribute="value" serverAlias = "Alias1"/>
+</Binding>	
+
+<Binding mode="oneWay">
+	<Source xsi:type="brease" contentRefId="LEDContent" widgetRefId="CheckBoxGreenLED6" attribute="value" />
+	<Target xsi:type="opcUa" refId="::AsGlobalPV:Led6Command.Green" attribute="value" serverAlias = "Alias1"/>
+</Binding>
+
+<Binding mode="oneWay">
+	<Source xsi:type="opcUa"  refId="::AsGlobalPV:Led6Status.IsRunning" serverAlias = "Alias1"  attribute="value" />
+	<Target xsi:type="brease" contentRefId="LEDContent" widgetRefId="LEDButton6" attribute="value" />
+</Binding>				
+		
+
+				<!-- =================== LED obsluga, game info ========================= -->
+<Binding mode="twoWay">
+	<Source xsi:type="brease" contentRefId="LEDContent" widgetRefId="ToggleSwitchColorMode" attribute="value" />
+	<Target xsi:type="opcUa" refId="::AsGlobalPV:LEDMode.Automatic" attribute="value" serverAlias = "Alias1"/>
+</Binding>
+
+<Binding mode="twoWay">
+	<Source xsi:type="brease" contentRefId="LEDContent" widgetRefId="RadioButtonGroupLEDMode" attribute="selectedIndex" />
+	<Target xsi:type="opcUa" refId="::AsGlobalPV:LEDMode.Mode" attribute="value" serverAlias = "Alias1"/>
+</Binding>				
+	
+<Binding mode="oneWay">
+	<Source xsi:type="opcUa"  refId="::LED1Progra:Score" serverAlias="Alias1" attribute="value" />
+	<Target xsi:type="brease" contentRefId="LEDContent" widgetRefId="NumericOutputGameResult" attribute="value" />
+</Binding>
+		
+<Binding mode="oneWay">   <!--  groupbox Game info visibility -->
+	<Source xsi:type="brease" widgetRefId="ToggleSwitchColorMode" contentRefId="LEDContent" attribute="value" />
+	<Target xsi:type="expression" refId="ANDgame" attribute="inA" />
+</Binding>			
+<Binding mode="oneWay">
+	<Source xsi:type="brease" widgetRefId="RadioButtonGame" contentRefId="LEDContent" attribute="value" />
+	<Target xsi:type="expression" refId="ANDgame" attribute="inB" />
+</Binding>
+<Binding mode="oneWay">
+	<Source xsi:type="expression" refId="ANDgame" attribute="result" />
+	<Target xsi:type="brease" widgetRefId="GroupBox1" contentRefId="LEDContent" attribute="visible" />
+</Binding>
+						
+
+  </Bindings>
+</BindingsSet>

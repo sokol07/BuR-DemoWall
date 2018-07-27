@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="MasterSafetyContent" height="700" width="500" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="20" left="60" width="379" height="640" zIndex="0" text="X20SL8010" shadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Label6" top="43" left="20" width="80" height="30" zIndex="0" text="Serial nr:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label7" top="104" left="20" width="120" height="30" zIndex="1" text="Module ID:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label8" top="162" left="20" width="100" height="30" zIndex="2" multiLine="true" text="Hardware variant:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label9" top="212" left="20" width="100" height="56" zIndex="3" multiLine="true" text="Firmware version:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputX20SL8010Serial" top="44" left="200" width="120" height="30" zIndex="4" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputX20SL8010ModuleId" top="104" left="200" width="120" height="30" zIndex="5" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputX20SL8010Hardware" top="164" left="200" width="120" height="30" zIndex="6" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputX20SL8010Firmware" top="224" left="200" width="120" height="30" zIndex="7" />
+        <Widget xsi:type="widgets.brease.Label" id="Label10" top="284" left="20" width="80" height="30" zIndex="8" text="NET time:" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputX20SL8010NETTime" top="284" left="200" width="120" height="30" zIndex="9" />
+        <Widget xsi:type="widgets.brease.Label" id="Label1" top="344" left="20" width="80" height="30" zIndex="10" text="udit_low:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label2" top="404" left="20" width="80" height="30" zIndex="11" text="udit_high:" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputX20SL8010UditLow" top="344" left="200" width="120" height="30" zIndex="12" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputX20SL8010UditHigh" top="404" left="200" width="120" height="30" zIndex="13" />
+        <Widget xsi:type="widgets.brease.Label" id="Label22" top="524" left="140" width="110" height="30" zIndex="14" text="Module OK:" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnX20SL8010ModOK" top="564" left="168" width="40" height="30" zIndex="15" cornerRadius="25px" enable="false" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

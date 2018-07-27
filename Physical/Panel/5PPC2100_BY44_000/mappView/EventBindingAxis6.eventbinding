@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="EventBindingAxis6" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+    
+		<!--================================== AXIS 6 ========================================== -->	
+
+		<EventBinding>	<!--przycisk stop robi stop i wylacza move -->
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="Axis6Content" widgetRefId="ButtonStopAxis6" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="Axis6Content" widgetRefId="ToggleButtonMoveAxis6" >
+						<Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="0" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gDriveAxis6.Command.Stop" serverAlias="Alias1" >
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>		
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+
+
+		<EventBinding>	<!--przycisk homing  -->
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="Axis6Content" widgetRefId="ButtonHomingAxis6" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gDriveAxis6.Command.Home" serverAlias="Alias1">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+
+		<EventBinding>	<!--przycisk error reset  -->
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="Axis6Content" widgetRefId="ButtonErrorReset6" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gDriveAxis6.Command.ErrorReset" serverAlias="Alias1" >
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+
+		
+		<EventBinding>   	<!-- update predkosci   -->
+			<Source xsi:type="widgets.brease.NumericInput.Event" contentRefId="Axis6Content" widgetRefId="NumericInputVelocityAxis6" event="ValueChanged" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gDriveAxis6.Command.Update" serverAlias="Alias1">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+		
+		<EventBinding>   	<!-- update predkosci po zmianie sliderem  -->
+			<Source xsi:type="widgets.brease.NumericInput.Event" contentRefId="Axis6Content" widgetRefId="BasicSliderVelocityAxis6" event="ValueChanged" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gDriveAxis6.Command.Update" serverAlias="Alias1" >
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+		
+	</Bindings>
+</EventBindingSet>

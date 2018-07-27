@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="AIAOContent" height="650" width="1350" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxAI" top="40" left="700" width="200" height="580" zIndex="0" text="X20AI2632" textAlign="center" shadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputAI1" top="335" left="40" width="110" height="40" zIndex="0" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputAI2" top="410" left="40" width="110" height="40" zIndex="1" />
+        <Widget xsi:type="widgets.brease.Label" id="Label1" top="304" left="80" width="40" height="30" zIndex="2" text="AI1:" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label2" top="380" left="80" width="40" height="30" zIndex="3" text="AI2:" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label5" top="183" left="0" width="85" height="30" zIndex="4" text="Stale data:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label34" top="4" left="0" width="80" height="30" zIndex="5" text="Serial nr:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label35" top="44" left="0" width="120" height="30" zIndex="6" text="Module ID:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label36" top="85" left="0" width="100" height="30" zIndex="7" multiLine="true" text="Hardware variant:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label37" top="125" left="0" width="100" height="56" zIndex="8" multiLine="true" text="Firmware version:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputAI2632Serial" top="5" left="90" width="100" height="30" zIndex="9" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputAI2632ModuleId" top="45" left="90" width="100" height="30" zIndex="10" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputAI2632Hardware" top="93" left="90" width="100" height="30" zIndex="11" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputAI2632Firmware" top="145" left="90" width="100" height="30" zIndex="12" />
+        <Widget xsi:type="widgets.brease.Label" id="Label38" top="204" left="0" width="100" height="56" zIndex="13" multiLine="true" text="Conversion cycle:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputAI2632Conversion" top="224" left="90" width="100" height="30" zIndex="14" />
+        <Widget xsi:type="widgets.brease.Label" id="Label39" top="264" left="0" width="100" height="30" zIndex="15" text="Sync status:" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnAI2632SyncStatus" top="264" left="120" width="40" height="30" zIndex="16" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.Label" id="Label40" top="464" left="50" width="110" height="30" zIndex="17" text="Module OK:" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnAI2632ModOK" top="504" left="80" width="40" height="30" zIndex="18" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnAI2632StaleData" top="184" left="119" width="40" height="30" zIndex="19" cornerRadius="25px" enable="false" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxAO" top="40" left="920" width="200" height="580" zIndex="1" text="X20AO2632" shadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Label3" top="380" left="80" width="78" height="30" zIndex="0" text="AO2:" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label4" top="304" left="80" width="58" height="30" zIndex="1" text="AO1:" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputAO1" top="335" left="40" width="110" height="40" zIndex="2" maxValue="32767" minValue="-32767" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputAO2" top="410" left="40" width="110" height="40" zIndex="3" maxValue="32767" minValue="-32767" />
+        <Widget xsi:type="widgets.brease.Label" id="Label41" top="0" left="0" width="80" height="30" zIndex="4" text="Serial nr:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label42" top="40" left="0" width="120" height="30" zIndex="5" text="Module ID:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label43" top="81" left="0" width="100" height="30" zIndex="6" multiLine="true" text="Hardware variant:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label44" top="121" left="0" width="100" height="56" zIndex="7" multiLine="true" text="Firmware version:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputAO2632Serial" top="1" left="90" width="100" height="30" zIndex="8" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputAO2632ModuleId" top="41" left="90" width="100" height="30" zIndex="9" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputAO2632Hardware" top="89" left="90" width="100" height="30" zIndex="10" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputAO2632Firmware" top="141" left="90" width="100" height="30" zIndex="11" />
+        <Widget xsi:type="widgets.brease.Label" id="Label45" top="464" left="50" width="110" height="30" zIndex="12" text="Module OK:" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnAO2632ModOK" top="504" left="80" width="40" height="30" zIndex="13" cornerRadius="25px" enable="false" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxDC" top="40" left="1140" width="200" height="580" zIndex="2" text="X20DC1396" shadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputDC" top="370" left="45" width="110" height="40" zIndex="0" />
+        <Widget xsi:type="widgets.brease.Label" id="Label46" top="4" left="0" width="80" height="30" zIndex="1" text="Serial nr:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label47" top="44" left="0" width="120" height="30" zIndex="2" text="Module ID:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label48" top="85" left="0" width="100" height="30" zIndex="3" multiLine="true" text="Hardware variant:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label49" top="125" left="0" width="100" height="56" zIndex="4" multiLine="true" text="Firmware version:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputDC1396Serial" top="5" left="90" width="100" height="30" zIndex="5" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputDC1396ModuleId" top="45" left="90" width="100" height="30" zIndex="6" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputDC1396Hardware" top="93" left="90" width="100" height="30" zIndex="7" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputDC1396Firmware" top="145" left="90" width="100" height="30" zIndex="8" />
+        <Widget xsi:type="widgets.brease.Label" id="Label27" top="175" left="0" width="85" height="30" zIndex="9" text="Stale data:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label28" top="210" left="0" width="85" height="56" zIndex="10" multiLine="true" text="Reference mode encoder:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputDC1396RefModeEncoder" top="238" left="90" width="100" height="30" zIndex="11" />
+        <Widget xsi:type="widgets.brease.Label" id="Label50" top="270" left="0" width="70" height="36" zIndex="12" multiLine="true" text="Status Input:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputDC1396Status" top="274" left="100" width="80" height="30" zIndex="13" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" />
+        <Widget xsi:type="widgets.brease.Label" id="Label51" top="314" left="0" width="80" height="36" zIndex="14" multiLine="true" text="Digital input:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label52" top="464" left="50" width="110" height="30" zIndex="15" text="Module OK:" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnDC1396ModOK" top="504" left="80" width="40" height="30" zIndex="16" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.Label" id="Label30" top="344" left="65" width="85" height="30" zIndex="17" text="Encoder:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label53" top="424" left="0" width="120" height="36" zIndex="18" text="Power supply:" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnDC1396PowerSupply" top="424" left="140" width="40" height="30" zIndex="19" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnDC1396StaleData" top="175" left="119" width="40" height="30" zIndex="20" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnDC1396DigitalInput" top="315" left="119" width="40" height="30" zIndex="21" cornerRadius="25px" enable="false" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxAI1" top="40" left="479" width="200" height="580" zIndex="3" text="PS9400" shadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Label23" top="0" left="0" width="80" height="30" zIndex="0" text="Serial nr:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label24" top="40" left="0" width="120" height="30" zIndex="1" text="Module ID:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label25" top="81" left="0" width="100" height="30" zIndex="2" multiLine="true" text="Hardware variant:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label26" top="121" left="0" width="100" height="56" zIndex="3" multiLine="true" text="Firmware version:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputPS9400Serial" top="1" left="90" width="100" height="30" zIndex="4" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputPS9400ModuleId" top="41" left="90" width="100" height="30" zIndex="5" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputPS9400Hardware" top="89" left="90" width="100" height="30" zIndex="6" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputPS9400Firmware" top="141" left="90" width="100" height="30" zIndex="7" />
+        <Widget xsi:type="widgets.brease.Label" id="Label29" top="204" left="50" width="110" height="30" zIndex="8" text="Status Input:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label32" top="284" left="50" width="110" height="30" zIndex="9" text="Status Input:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label33" top="464" left="51" width="110" height="30" zIndex="10" text="Module OK:" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnPS9400ModOK" top="504" left="81" width="40" height="30" zIndex="11" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnPS9400StatusInput1" top="243" left="81" width="40" height="30" zIndex="12" cornerRadius="25px" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnPS9400StatusInput2" top="323" left="81" width="40" height="30" zIndex="13" cornerRadius="25px" enable="false" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxAI2" top="39" left="20" width="220" height="581" zIndex="4" text="IF1061-1" shadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Label6" top="5" left="0" width="80" height="30" zIndex="0" text="Serial nr:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label7" top="45" left="0" width="120" height="30" zIndex="1" text="Module ID:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label8" top="86" left="0" width="100" height="30" zIndex="2" multiLine="true" text="Hardware variant:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label9" top="126" left="0" width="100" height="56" zIndex="3" multiLine="true" text="Firmware version:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputIF1061-1Serial" top="6" left="90" width="120" height="30" zIndex="4" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputIF1061-1ModuId" top="46" left="90" width="120" height="30" zIndex="5" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputHardwareHardware" top="94" left="90" width="120" height="30" zIndex="6" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputIF1061-1Firmware" top="147" left="90" width="120" height="30" zIndex="7" />
+        <Widget xsi:type="widgets.brease.Label" id="Label10" top="185" left="0" width="120" height="35" zIndex="8" multiLine="true" text="Comunication state:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputIF1061-1ComunicationState" top="190" left="90" width="120" height="30" zIndex="9" />
+        <Widget xsi:type="widgets.brease.Label" id="Label11" top="225" left="0" width="120" height="35" zIndex="10" multiLine="true" text="Comunication error:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputIF1061-1ComunicationError" top="230" left="90" width="120" height="30" zIndex="11" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputIF1061-1Version" top="270" left="90" width="120" height="30" zIndex="12" />
+        <Widget xsi:type="widgets.brease.Label" id="Label12" top="265" left="0" width="120" height="35" zIndex="13" multiLine="true" text="Version:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label13" top="305" left="0" width="120" height="35" zIndex="14" multiLine="true" text="Error count:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputIF1061-1ErrorCount" top="308" left="90" width="120" height="30" zIndex="15" />
+        <Widget xsi:type="widgets.brease.Label" id="Label14" top="345" left="0" width="120" height="35" zIndex="16" multiLine="true" text="Slave state:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputIF1061-1SlaveState" top="346" left="90" width="120" height="30" zIndex="17" />
+        <Widget xsi:type="widgets.brease.Label" id="Label15" top="385" left="0" width="120" height="35" zIndex="18" multiLine="true" text="Configured slaves:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputIF1061-1ConfiguresSlaves" top="390" left="90" width="120" height="30" zIndex="19" />
+        <Widget xsi:type="widgets.brease.Label" id="Label16" top="425" left="0" width="120" height="35" zIndex="20" multiLine="true" text="Active slaves:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputIF1061-1ActiveSlaves" top="427" left="90" width="120" height="30" zIndex="21" />
+        <Widget xsi:type="widgets.brease.Label" id="Label17" top="465" left="60" width="110" height="30" zIndex="22" text="Module OK:" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnIF1061-1ModOK" top="505" left="90" width="40" height="30" zIndex="23" cornerRadius="25px" enable="false" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxAI3" top="40" left="260" width="200" height="580" zIndex="5" text="BC1083" shadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Label18" top="4" left="0" width="80" height="30" zIndex="0" text="Serial nr:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label19" top="44" left="0" width="120" height="30" zIndex="1" text="Module ID:" />
+        <Widget xsi:type="widgets.brease.Label" id="Label20" top="85" left="0" width="100" height="30" zIndex="2" multiLine="true" text="Hardware variant:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label21" top="125" left="0" width="100" height="56" zIndex="3" multiLine="true" text="Firmware version:" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputBC1083Serial" top="5" left="90" width="100" height="30" zIndex="4" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputBC1083ModuleId" top="45" left="90" width="100" height="30" zIndex="5" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputBC1083Hardware" top="93" left="90" width="100" height="30" zIndex="6" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputBC1083Firmware" top="145" left="90" width="100" height="30" zIndex="7" />
+        <Widget xsi:type="widgets.brease.Label" id="Label22" top="464" left="50" width="110" height="30" zIndex="8" text="Module OK:" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleBtnBC1083ModOK" top="504" left="80" width="40" height="30" zIndex="9" cornerRadius="25px" enable="false" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>
